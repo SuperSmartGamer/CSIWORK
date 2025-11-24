@@ -309,17 +309,33 @@ def main():
         p = pyaudio.PyAudio()
         print("--- Available Input Devices ---")
         device_ok = False
+        target_device_info = None
+        
         for i in range(p.get_device_count()):
             info = p.get_device_info_by_index(i)
             if info['maxInputChannels'] > 0:
-                if info['maxInputChannels'] >= CHANNELS and info['defaultSampleRate'] == SAMPLE_RATE:
-                    print(f"Index {i}: {info['name']} (Rate: {info['defaultSampleRate']} Hz)")
-                    if i == AUDIO_DEVICE:
-                        device_ok = True
+                marker = ""
+                if i == AUDIO_DEVICE:
+                    marker = " ← SELECTED"
+                    device_ok = True
+                    target_device_info = info
+                
+                # Show all devices with their key info
+                print(f"Index {i}: {info['name']}")
+                print(f"         Channels: {info['maxInputChannels']}, Rate: {info['defaultSampleRate']} Hz{marker}")
+        
         p.terminate()
         
         if not device_ok:
-            print(f"[FATAL] Audio Device {AUDIO_DEVICE} not configured correctly for {SAMPLE_RATE}Hz.")
+            print(f"\n[FATAL] Audio Device {AUDIO_DEVICE} not found!")
+            print(f"Please update AUDIO_DEVICE in the script to match one of the indices above.")
+            return
+        
+        # Confirm selected device
+        print(f"\n✅ Using: [{AUDIO_DEVICE}] {target_device_info['name']}")
+        confirm = input("Is this the correct microphone? (y/n): ").strip().lower()
+        if confirm != 'y':
+            print("\n[ABORTED] Please update AUDIO_DEVICE in the script and restart.")
             return
             
     except Exception as e:
