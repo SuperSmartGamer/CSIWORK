@@ -1,0 +1,292 @@
+Command: C:\Espressif\python_env\idf5.5_py3.12_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c6 --revision 0 --decode-panic backtrace C:\Espressif\frameworks\esp-idf-v5.5.1\csi\blink\build\blink.elf C:\Espressif\frameworks\esp-idf-v5.5.1\csi\blink\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.12_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py'
+ild:Sep 19 2022
+rst:0x15 (USB_UART_HPSYS),boot:0x1c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40804c7c
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875730,len:0x1748
+load:0x4086b910,len:0xddc
+load:0x4086e610,len:0x31dc
+entry 0x4086b91a
+[0;32mI (24) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 23 2025 16:14:06[0m
+[0;32mI (25) boot: chip revision: v0.0[0m
+[0;32mI (25) boot: efuse block revision: v0.2[0m
+[0;32mI (26) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (26) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (26) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (26) boot: Enabling RNG early entropy source...[0m
+[0;32mI (27) boot: Partition Table:[0m
+[0;32mI (27) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (27) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (28) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (28) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (29) boot: End of partition table[0m
+[0;32mI (29) esp_image: segment 0: paddr=00010020 vaddr=42098020 size=1b86ch (112748) map[0m
+[0;32mI (52) esp_image: segment 1: paddr=0002b894 vaddr=40800000 size=04784h ( 18308) load[0m
+[0;32mI (56) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=901e0h (590304) map[0m
+[0;32mI (169) esp_image: segment 3: paddr=000c0208 vaddr=40804784 size=16854h ( 92244) load[0m
+[0;32mI (190) esp_image: segment 4: paddr=000d6a64 vaddr=4081afe0 size=0361ch ( 13852) load[0m
+[0;32mI (200) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (200) boot: Disabling RNG early entropy source...[0m
+[0;32mI (201) cpu_start: Unicore app[0m
+[0;32mI (209) cpu_start: Pro cpu start user code[0m
+[0;32mI (209) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (209) app_init: Application information:[0m
+[0;32mI (210) app_init: Project name:     blink[0m
+[0;32mI (210) app_init: App version:      v5.5.1[0m
+[0;32mI (210) app_init: Compile time:     Nov 23 2025 16:13:58[0m
+[0;32mI (210) app_init: ELF file SHA256:  066b1e4a1...[0m
+[0;32mI (211) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (211) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (211) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (211) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (212) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (212) heap_init: At 40823A20 len 00058BF0 (354 KiB): RAM[0m
+[0;32mI (212) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (212) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (213) spi_flash: detected chip: gd[0m
+[0;32mI (213) spi_flash: flash io: dio[0m
+[0;33mW (214) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (214) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (215) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (215) coexist: coex firmware version: b0bcc39[0m
+[0;32mI (216) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (216) main_task: Started on CPU0[0m
+[0;32mI (216) main_task: Calling app_main()[0m
+[0;32mI (231) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (231) net80211: net80211 rom version: 5b8dcfa[0m
+[0;32mI (233) wifi:wifi driver task: 40865604, prio:23, stack:6656, core=0[0m
+[0;32mI (241) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (242) wifi:wifi certification version: v7.0[0m
+[0;32mI (242) wifi:config NVS flash: enabled[0m
+[0;32mI (242) wifi:config nano formatting: disabled[0m
+[0;32mI (242) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band mode:0x1[0m
+[0;32mI (243) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (243) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (243) wifi:Init management short buffer num: 32[0m
+[0;32mI (243) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (243) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (244) wifi:Init static rx buffer size: 2212 (rxctrl:92, csi:512)[0m
+[0;32mI (244) wifi:Init static rx buffer num: 16[0m
+[0;32mI (244) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (245) wifi_init: rx ba win: 6[0m
+[0;32mI (245) wifi_init: accept mbox: 6[0m
+[0;32mI (245) wifi_init: tcpip mbox: 32[0m
+[0;32mI (245) wifi_init: udp mbox: 6[0m
+[0;32mI (245) wifi_init: tcp mbox: 6[0m
+[0;32mI (245) wifi_init: tcp tx win: 5760[0m
+[0;32mI (245) wifi_init: tcp rx win: 5760[0m
+[0;32mI (246) wifi_init: tcp mss: 1440[0m
+[0;32mI (246) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (246) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (246) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (246) phy_init: phy_version 341,a6c8fe6,Jul 30 2025,18:34:11[0m
+[0;32mI (298) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;33mW (354) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (354) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (355) wifi:(agc)0x600a7128:0xd206e800, min.avgNF:0xce->0xd2(dB), RCalCount:0x6e, min.RRssi:0x800(-128.00)[0m
+[0;32mI (356) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;32mI (356) wifi:ic_enable_sniffer[0m
+[0;32mI (357) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (357) main_task: Returned from app_main()[0m
+[0;33mW (1230) GHOST_RX: PARTIAL | Raw: 58 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (1230) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (2231) GHOST_RX: PARTIAL | Raw: 66 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (2231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (3231) GHOST_RX: PARTIAL | Raw: 66 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (3231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (4231) GHOST_RX: PARTIAL | Raw: 68 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (4231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (5231) GHOST_RX: PARTIAL | Raw: 66 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (5231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (6231) GHOST_RX: PARTIAL | Raw: 65 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (6231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (7231) GHOST_RX: PARTIAL | Raw: 67 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (7231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (8231) GHOST_RX: PARTIAL | Raw: 67 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (8231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (9231) GHOST_RX: PARTIAL | Raw: 66 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (9231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (10231) GHOST_RX: PARTIAL | Raw: 66 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (10231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (11231) GHOST_RX: PARTIAL | Raw: 63 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (11231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (12231) GHOST_RX: PARTIAL | Raw: 65 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (12231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (13231) GHOST_RX: PARTIAL | Raw: 65 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (13231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (14231) GHOST_RX: PARTIAL | Raw: 67 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (14231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (15231) GHOST_RX: PARTIAL | Raw: 65 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (15231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (16231) GHOST_RX: PARTIAL | Raw: 61 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (16231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (17231) GHOST_RX: PARTIAL | Raw: 34 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (17231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (18231) GHOST_RX: PARTIAL | Raw: 67 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (18231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (19231) GHOST_RX: PARTIAL | Raw: 15 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (19231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (20231) GHOST_RX: PARTIAL | Raw: 18 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (20231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (21231) GHOST_RX: PARTIAL | Raw: 50 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (21231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (22231) GHOST_RX: PARTIAL | Raw: 81 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (22231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (23231) GHOST_RX: PARTIAL | Raw: 64 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (23231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (24231) GHOST_RX: PARTIAL | Raw: 67 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (24231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (25231) GHOST_RX: PARTIAL | Raw: 55 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (25231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (26231) GHOST_RX: PARTIAL | Raw: 15 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (26231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (27231) GHOST_RX: PARTIAL | Raw: 11 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (27231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (28231) GHOST_RX: PARTIAL | Raw: 9 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (28231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (29231) GHOST_RX: PARTIAL | Raw: 50 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (29231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (30231) GHOST_RX: PARTIAL | Raw: 65 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (30231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (31231) GHOST_RX: PARTIAL | Raw: 69 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (31231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (32231) GHOST_RX: PARTIAL | Raw: 62 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (32231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (33231) GHOST_RX: PARTIAL | Raw: 67 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (33231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (34231) GHOST_RX: PARTIAL | Raw: 69 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (34231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (35231) GHOST_RX: PARTIAL | Raw: 63 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (35231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (36231) GHOST_RX: PARTIAL | Raw: 68 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (36231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (37231) GHOST_RX: PARTIAL | Raw: 77 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (37231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (38231) GHOST_RX: PARTIAL | Raw: 96 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (38231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (39231) GHOST_RX: PARTIAL | Raw: 84 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (39231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (40231) GHOST_RX: PARTIAL | Raw: 92 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (40231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (41231) GHOST_RX: PARTIAL | Raw: 88 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (41231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (42231) GHOST_RX: PARTIAL | Raw: 74 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (42231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (43231) GHOST_RX: PARTIAL | Raw: 81 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (43231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (44231) GHOST_RX: PARTIAL | Raw: 85 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (44231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (45231) GHOST_RX: PARTIAL | Raw: 74 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (45231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (46231) GHOST_RX: PARTIAL | Raw: 76 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (46231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (47231) GHOST_RX: PARTIAL | Raw: 71 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (47231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (48231) GHOST_RX: PARTIAL | Raw: 66 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (48231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (49231) GHOST_RX: PARTIAL | Raw: 67 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (49231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (50231) GHOST_RX: PARTIAL | Raw: 65 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (50231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (51231) GHOST_RX: PARTIAL | Raw: 68 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (51231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (52231) GHOST_RX: PARTIAL | Raw: 67 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (52231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (53231) GHOST_RX: PARTIAL | Raw: 103 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (53231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (54231) GHOST_RX: PARTIAL | Raw: 118 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (54231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (55231) GHOST_RX: PARTIAL | Raw: 71 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (55231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (56231) GHOST_RX: PARTIAL | Raw: 68 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (56231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (57231) GHOST_RX: PARTIAL | Raw: 71 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (57231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (58231) GHOST_RX: PARTIAL | Raw: 64 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (58231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (59231) GHOST_RX: PARTIAL | Raw: 69 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (59231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (60231) GHOST_RX: PARTIAL | Raw: 82 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (60231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (61231) GHOST_RX: PARTIAL | Raw: 69 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (61231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (62231) GHOST_RX: PARTIAL | Raw: 66 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (62231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (63231) GHOST_RX: PARTIAL | Raw: 66 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (63231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (64231) GHOST_RX: PARTIAL | Raw: 68 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (64231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (65231) GHOST_RX: PARTIAL | Raw: 69 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (65231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (66231) GHOST_RX: PARTIAL | Raw: 67 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (66231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (67231) GHOST_RX: PARTIAL | Raw: 65 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (67231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (68231) GHOST_RX: PARTIAL | Raw: 65 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (68231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (69231) GHOST_RX: PARTIAL | Raw: 67 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (69231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (70231) GHOST_RX: PARTIAL | Raw: 88 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (70231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (71231) GHOST_RX: PARTIAL | Raw: 119 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (71231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (72231) GHOST_RX: PARTIAL | Raw: 66 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (72231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (73231) GHOST_RX: PARTIAL | Raw: 67 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (73231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (74231) GHOST_RX: PARTIAL | Raw: 74 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (74231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (75231) GHOST_RX: PARTIAL | Raw: 66 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (75231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (76231) GHOST_RX: PARTIAL | Raw: 65 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (76231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (77231) GHOST_RX: PARTIAL | Raw: 76 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (77231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (78231) GHOST_RX: PARTIAL | Raw: 66 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (78231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (79231) GHOST_RX: PARTIAL | Raw: 67 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (79231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (80231) GHOST_RX: PARTIAL | Raw: 67 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (80231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (81231) GHOST_RX: PARTIAL | Raw: 69 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (81231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (82231) GHOST_RX: PARTIAL | Raw: 61 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (82231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (83231) GHOST_RX: PARTIAL | Raw: 70 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (83231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (84231) GHOST_RX: PARTIAL | Raw: 66 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (84231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (85231) GHOST_RX: PARTIAL | Raw: 66 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (85231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (86231) GHOST_RX: PARTIAL | Raw: 49 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (86231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (87231) GHOST_RX: PARTIAL | Raw: 23 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (87231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (88231) GHOST_RX: PARTIAL | Raw: 44 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (88231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (89231) GHOST_RX: PARTIAL | Raw: 35 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (89231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (90231) GHOST_RX: PARTIAL | Raw: 31 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (90231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (91231) GHOST_RX: PARTIAL | Raw: 14 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (91231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (92231) GHOST_RX: PARTIAL | Raw: 10 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (92231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (93231) GHOST_RX: PARTIAL | Raw: 16 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (93231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (94231) GHOST_RX: PARTIAL | Raw: 9 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (94231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (95231) GHOST_RX: PARTIAL | Raw: 15 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (95231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (96231) GHOST_RX: PARTIAL | Raw: 12 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (96231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (97231) GHOST_RX: PARTIAL | Raw: 42 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (97231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (98231) GHOST_RX: PARTIAL | Raw: 16 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (98231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m
+[0;33mW (99231) GHOST_RX: PARTIAL | Raw: 20 (Hearing packets) | CSI: 0 (No CSI data)[0m
+[0;33mW (99231) GHOST_RX: --> If Raw is High but CSI is 0, the Blaster is likely sending Legacy (11b) packets.[0m

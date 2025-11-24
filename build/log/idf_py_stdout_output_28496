@@ -1,0 +1,6 @@
+Command: C:\Espressif\python_env\idf5.5_py3.12_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM11 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c6 --revision 0 --decode-panic backtrace C:\Espressif\frameworks\esp-idf-v5.5.1\csi\blink\build\blink.elf C:\Espressif\frameworks\esp-idf-v5.5.1\csi\blink\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.12_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py'
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x15 (USB_UART_HPSYS),boot:0x4 (DOWNLOAD(USB/UART0/SDIO_FEI_FEO))
+Saved PC:0x40017606
+waiting for download

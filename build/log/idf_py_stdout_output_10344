@@ -1,0 +1,76 @@
+Command: ninja flash
+[1/5] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.5.1\csi\blink\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.12_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.5.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Espressif/frameworks/esp-idf-v5.5.1/csi/blink/build/partition_table/partition-table.bin C:/Espressif/frameworks/esp-idf-v5.5.1/csi/blink/build/blink.bin"
+blink.bin binary size 0xca890 bytes. Smallest app partition is 0x100000 bytes. 0x35770 bytes (21%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.5.1\csi\blink\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.12_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.5.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Espressif/frameworks/esp-idf-v5.5.1/csi/blink/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5760 bytes. 0x28a0 bytes (32%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.5.1\components\esptool_py && C:\Espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.5.1 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.5_py3.12_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.5.1/components/esptool_py/esptool/esptool.py;--chip;esp32c6 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Espressif/frameworks/esp-idf-v5.5.1/csi/blink/build -P C:/Espressif/frameworks/esp-idf-v5.5.1/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32c6 -p COM5 -b 2000000 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 blink.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.10.0
+Serial port COM5
+Connecting...
+Chip is ESP32-C6 (QFN40) (revision v0.0)
+Features: WiFi 6, BT 5, IEEE802.15.4
+Crystal is 40MHz
+USB mode: USB-Serial/JTAG
+MAC: 40:4c:ca:ff:fe:55:61:8c
+BASE MAC: 40:4c:ca:55:61:8c
+MAC_EXT: ff:fe
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 2000000
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x000dafff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 22368 bytes to 13800...
+Writing at 0x00000000... (100 %)
+Wrote 22368 bytes (13800 compressed) at 0x00000000 in 0.3 seconds (effective 564.4 kbit/s)...
+Hash of data verified.
+Compressed 829584 bytes to 521580...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001bef8... (6 %)
+Writing at 0x00024bab... (9 %)
+Writing at 0x0002def1... (12 %)
+Writing at 0x00033ced... (15 %)
+Writing at 0x0003a76c... (18 %)
+Writing at 0x00040c44... (21 %)
+Writing at 0x00046a74... (25 %)
+Writing at 0x0004c08a... (28 %)
+Writing at 0x000517ec... (31 %)
+Writing at 0x0005742e... (34 %)
+Writing at 0x0005d3b7... (37 %)
+Writing at 0x00062db2... (40 %)
+Writing at 0x000691b7... (43 %)
+Writing at 0x0006f763... (46 %)
+Writing at 0x000756d4... (50 %)
+Writing at 0x0007b7c8... (53 %)
+Writing at 0x00081745... (56 %)
+Writing at 0x00087822... (59 %)
+Writing at 0x0008d6e6... (62 %)
+Writing at 0x000936c6... (65 %)
+Writing at 0x0009976c... (68 %)
+Writing at 0x0009f2ae... (71 %)
+Writing at 0x000a4eca... (75 %)
+Writing at 0x000aa66f... (78 %)
+Writing at 0x000afdf3... (81 %)
+Writing at 0x000b56dc... (84 %)
+Writing at 0x000bb42a... (87 %)
+Writing at 0x000c1e2f... (90 %)
+Writing at 0x000c83b9... (93 %)
+Writing at 0x000cde14... (96 %)
+Writing at 0x000d3b7e... (100 %)
+Wrote 829584 bytes (521580 compressed) at 0x00010000 in 4.2 seconds (effective 1588.0 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 537.3 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

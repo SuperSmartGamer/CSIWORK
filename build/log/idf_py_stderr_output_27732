@@ -1,0 +1,3 @@
+Command: ninja flash
+Traceback (most recent call last):
+  File "<frozen runpy>", line 189, in _run_module_as_main

@@ -1,0 +1,28 @@
+Command: C:\Espressif\python_env\idf5.5_py3.12_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM11 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c6 --revision 0 --decode-panic backtrace C:\Espressif\frameworks\esp-idf-v5.5.1\csi\blink\build\blink.elf C:\Espressif\frameworks\esp-idf-v5.5.1\csi\blink\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.12_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py'
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x15 (USB_UART_HPSYS),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x400228ee
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875730,len:0x1748
+load:0x4086b910,len:0xddc
+load:0x4086e610,len:0x31dc
+entry 0x4086b91a
+[0;32mI (23) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Nov 23 2025 16:14:06[0m
+[0;32mI (23) boot: chip revision: v0.0[0m
+[0;32mI (23) boot: efuse block revision: v0.2[0m
+[0;32mI (24) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (24) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (24) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (25) boot: Enabling RNG early entropy source...[0m
+[0;32mI (25) boot: Partition Table:[0m
+[0;32mI (25) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (26) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (26) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (27) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (27) boot: End of partition table[0m
+[0;32mI (28) esp_image: segment 0: paddr=00010020 vaddr=42098020 size=1b178h (110968) map[0m
+[0;32mI (50) esp_image: segment 1: paddr=0002b1a0 vaddr=40800000 size=04e78h ( 20088) load[0m
+[0;32mI (55) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=90788h (591752) map[0m

@@ -1,0 +1,230 @@
+Command: C:\Espressif\python_env\idf5.5_py3.12_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c6 --revision 0 --decode-panic backtrace C:\Espressif\frameworks\esp-idf-v5.5.1\csi\blink\build\blink.elf C:\Espressif\frameworks\esp-idf-v5.5.1\csi\blink\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.12_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py'
+ep 19 2022
+rst:0x15 (USB_UART_HPSYS),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40804c80
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875730,len:0x1748
+load:0x4086b910,len:0xddc
+load:0x4086e610,len:0x31dc
+entry 0x4086b91a
+[0;32mI (24) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 23 2025 16:14:06[0m
+[0;32mI (25) boot: chip revision: v0.0[0m
+[0;32mI (25) boot: efuse block revision: v0.2[0m
+[0;32mI (25) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (26) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (26) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (26) boot: Enabling RNG early entropy source...[0m
+[0;32mI (27) boot: Partition Table:[0m
+[0;32mI (27) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (27) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (28) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (28) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (29) boot: End of partition table[0m
+[0;32mI (29) esp_image: segment 0: paddr=00010020 vaddr=42098020 size=1bb84h (113540) map[0m
+[0;32mI (52) esp_image: segment 1: paddr=0002bbac vaddr=40800000 size=0446ch ( 17516) load[0m
+[0;32mI (56) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=90fc4h (593860) map[0m
+[0;32mI (170) esp_image: segment 3: paddr=000c0fec vaddr=4080446c size=16b70h ( 93040) load[0m
+[0;32mI (190) esp_image: segment 4: paddr=000d7b64 vaddr=4081afe0 size=03604h ( 13828) load[0m
+[0;32mI (200) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (201) boot: Disabling RNG early entropy source...[0m
+[0;32mI (202) cpu_start: Unicore app[0m
+[0;32mI (210) cpu_start: Pro cpu start user code[0m
+[0;32mI (211) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (211) app_init: Application information:[0m
+[0;32mI (211) app_init: Project name:     blink[0m
+[0;32mI (211) app_init: App version:      v5.5.1[0m
+[0;32mI (211) app_init: Compile time:     Nov 23 2025 16:13:58[0m
+[0;32mI (212) app_init: ELF file SHA256:  5b8c444a2...[0m
+[0;32mI (212) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (212) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (212) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (212) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (213) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (213) heap_init: At 4083CA10 len 0003FC00 (255 KiB): RAM[0m
+[0;32mI (213) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (214) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (214) spi_flash: detected chip: gd[0m
+[0;32mI (215) spi_flash: flash io: dio[0m
+[0;33mW (215) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (216) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (216) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (217) coexist: coex firmware version: b0bcc39[0m
+[0;32mI (217) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (217) main_task: Started on CPU0[0m
+[0;32mI (217) main_task: Calling app_main()[0m
+[0;32mI (232) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (232) net80211: net80211 rom version: 5b8dcfa[0m
+[0;32mI (234) wifi:wifi driver task: 40846a4c, prio:23, stack:6656, core=0[0m
+[0;32mI (242) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (243) wifi:wifi certification version: v7.0[0m
+[0;32mI (243) wifi:config NVS flash: enabled[0m
+[0;32mI (243) wifi:config nano formatting: disabled[0m
+[0;32mI (243) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band mode:0x1[0m
+[0;32mI (244) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (244) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (244) wifi:Init management short buffer num: 32[0m
+[0;32mI (244) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (244) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (245) wifi:Init static rx buffer size: 2212 (rxctrl:92, csi:512)[0m
+[0;32mI (245) wifi:Init static rx buffer num: 16[0m
+[0;32mI (245) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (246) wifi_init: rx ba win: 6[0m
+[0;32mI (246) wifi_init: accept mbox: 6[0m
+[0;32mI (246) wifi_init: tcpip mbox: 32[0m
+[0;32mI (246) wifi_init: udp mbox: 6[0m
+[0;32mI (246) wifi_init: tcp mbox: 6[0m
+[0;32mI (246) wifi_init: tcp tx win: 5760[0m
+[0;32mI (246) wifi_init: tcp rx win: 5760[0m
+[0;32mI (247) wifi_init: tcp mss: 1440[0m
+[0;32mI (247) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (247) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (247) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (248) phy_init: phy_version 341,a6c8fe6,Jul 30 2025,18:34:11[0m
+[0;32mI (298) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;33mW (352) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (352) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (352) wifi:(agc)0x600a7128:0xd21f0c20, min.avgNF:0xce->0xd2(dB), RCalCount:0x1f0, min.RRssi:0xc20(-62.00)[0m
+[0;32mI (353) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;32mI (354) wifi:mode : sta (40:4c:ca:55:61:8c)[0m
+[0;32mI (354) wifi:enable tsf[0m
+[0;32mI (357) main_task: Returned from app_main()[0m
+[0;32mI (363) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (364) wifi:(connect)dot11_authmode:0x3, pairwise_cipher:0x3, group_cipher:0x3[0m
+[0;32mI (365) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (367) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (372) wifi:Association refused temporarily time 1500, comeback time 1600 (TUs)[0m
+[0;32mI (2011) wifi:state: assoc -> assoc (0x0)[0m
+[0;32mI (2018) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (2018) wifi:(trc)phytype:CBW20-SGI, snr:77, maxRate:144, highestRateIdx:0[0m
+[0;33mW (2018) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (2019) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:77, ampduState:wait operational[0m
+[0;32mI (2019) wifi:ifidx:0, rssi:-18, nf:-95, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:144, he:0, vht:0, ht:1[0m
+[0;32mI (2020) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (2031) wifi:connected with CSI_SECURE_LINK, aid = 1, channel 6, BW20, bssid = 40:4c:ca:55:b0:99[0m
+[0;32mI (2032) wifi:security: WPA2-PSK, phy:bgn, rssi:-18, cipher(pairwise:0x3, group:0x3), pmf:1, [0m
+[0;32mI (2033) wifi:pm start, type: 1, twt_start:0[0m
+
+[0;32mI (2033) wifi:pm start, type:1, aid:0x1, trans-BSSID:40:4c:ca:55:b0:99, BSSID[5]:0x99, mbssid(max-indicator:0, index:0), he:0[0m
+[0;32mI (2034) wifi:set rx beacon pti, rx_bcn_pti: 10, bcn_timeout: 25000, mt_pti: 10, mt_time: 10000[0m
+[0;32mI (2034) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (2035) wifi:[ADDBA]TX addba request, tid:7, dialogtoken:2, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x20)[0m
+[0;32mI (2035) wifi:[ADDBA]TX addba request, tid:5, dialogtoken:3, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (2037) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;32mI (2038) wifi:[ADDBA]RX addba response, status:0, tid:7/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;32mI (2038) wifi:[ADDBA]RX addba response, status:0, tid:5/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;32mI (2129) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (2218) HYBRID_RX: STATUS: Rx Count: 0[0m
+[0;32mI (3058) esp_netif_handlers: sta ip: 192.168.4.2, mask: 255.255.255.0, gw: 192.168.4.1[0m
+[0;32mI (3058) HYBRID_RX: Connected! IP: 192.168.4.2[0m
+[0;32mI (3059) wifi:ic_enable_sniffer[0m
+[0;32mI (3059) HYBRID_RX: HYBRID MODE ACTIVE (STA + PROMISC + CSI)[0m
+[0;32mI (4219) HYBRID_RX: STATUS: Rx Count: 0[0m
+[0;32mI (6220) HYBRID_RX: STATUS: Rx Count: 0[0m
+[0;32mI (8221) HYBRID_RX: STATUS: Rx Count: 0[0m
+[0;32mI (10222) HYBRID_RX: STATUS: Rx Count: 0[0m
+[0;32mI (12223) HYBRID_RX: STATUS: Rx Count: 0[0m
+[0;32mI (14224) HYBRID_RX: STATUS: Rx Count: 0[0m
+[0;32mI (16225) HYBRID_RX: STATUS: Rx Count: 0[0m
+[0;32mI (18226) HYBRID_RX: STATUS: Rx Count: 0[0m
+[0;32mI (20227) HYBRID_RX: STATUS: Rx Count: 0[0m
+[0;32mI (22228) HYBRID_RX: STATUS: Rx Count: 0[0m
+[0;32mI (24229) HYBRID_RX: STATUS: Rx Count: 0[0m
+��� �	&s        �� ����������������������������������
+��������  �����������
+�	���� �����������       ��� ���s        ������������������������������������������������  ����������������������������������		���      I (26230) HYBRID_RX: STATUS: Rx Count: 2
+[0;32mI (28231) HYBRID_RX: STATUS: Rx Count: 2[0m
+[0;32mI (30232) HYBRID_RX: STATUS: Rx Count: 2[0m
+[0;32mI (32233) HYBRID_RX: STATUS: Rx Count: 2[0m
+[0;32mI (34234) HYBRID_RX: STATUS: Rx Count: 2[0m
+[0;32mI (36235) HYBRID_RX: STATUS: Rx Count: 2[0m
+[0;32mI (38236) HYBRID_RX: STATUS: Rx Count: 2[0m
+[0;32mI (40237) HYBRID_RX: STATUS: Rx Count: 2[0m
+[0;32mI (42238) HYBRID_RX: STATUS: Rx Count: 2[0m
+[0;32mI (44239) HYBRID_RX: STATUS: Rx Count: 2[0m
+��� ��z�         ��  ������������
+������������  ����������	�� ���������� ���	������         ��� ��ߤ        � ��	����������������������������������� �
+	  $&'&&&%%! ��
+��������������������� ��      I (46240) HYBRID_RX: STATUS: Rx Count: 4
+[0;32mI (48241) HYBRID_RX: STATUS: Rx Count: 4[0m
+[0;32mI (50242) HYBRID_RX: STATUS: Rx Count: 4[0m
+[0;32mI (52243) HYBRID_RX: STATUS: Rx Count: 4[0m
+[0;32mI (54244) HYBRID_RX: STATUS: Rx Count: 4[0m
+[0;32mI (56245) HYBRID_RX: STATUS: Rx Count: 4[0m
+[0;32mI (58246) HYBRID_RX: STATUS: Rx Count: 4[0m
+[0;32mI (60247) HYBRID_RX: STATUS: Rx Count: 4[0m
+[0;32mI (62248) HYBRID_RX: STATUS: Rx Count: 4[0m
+[0;32mI (64249) HYBRID_RX: STATUS: Rx Count: 4[0m
+��� �j��         �����������������������	�
+����  ����������������������������      I (66250) HYBRID_RX: STATUS: Rx Count: 5
+[0;32mI (68251) HYBRID_RX: STATUS: Rx Count: 5[0m
+[0;32mI (70252) HYBRID_RX: STATUS: Rx Count: 5[0m
+[0;32mI (72253) HYBRID_RX: STATUS: Rx Count: 5[0m
+[0;32mI (74254) HYBRID_RX: STATUS: Rx Count: 5[0m
+[0;32mI (76255) HYBRID_RX: STATUS: Rx Count: 5[0m
+[0;32mI (78256) HYBRID_RX: STATUS: Rx Count: 5[0m
+[0;32mI (80257) HYBRID_RX: STATUS: Rx Count: 5[0m
+[0;32mI (82258) HYBRID_RX: STATUS: Rx Count: 5[0m
+[0;32mI (84259) HYBRID_RX: STATUS: Rx Count: 5[0m
+��� ��        ����
+�
+���	�	�	�	�	�
+�
+�
+����������  ���������������� �������	����        ��� �m#         � �
+��
+�
+�
+�      �����
+���������!�"�"� � ����� ��      I (86260) HYBRID_RX: STATUS: Rx Count: 7
+[0;32mI (88261) HYBRID_RX: STATUS: Rx Count: 7[0m
+[0;32mI (90262) HYBRID_RX: STATUS: Rx Count: 7[0m
+[0;32mI (92263) HYBRID_RX: STATUS: Rx Count: 7[0m
+[0;32mI (94264) HYBRID_RX: STATUS: Rx Count: 7[0m
+[0;32mI (96265) HYBRID_RX: STATUS: Rx Count: 7[0m
+[0;32mI (98266) HYBRID_RX: STATUS: Rx Count: 7[0m
+[0;32mI (100267) HYBRID_RX: STATUS: Rx Count: 7[0m
+[0;32mI (102268) HYBRID_RX: STATUS: Rx Count: 7[0m
+[0;32mI (104269) HYBRID_RX: STATUS: Rx Count: 7[0m
+��� ��8        ����������� �������  	    ���!�$�&�'�)�*  �%�&�%�%�$�#�!� � ��������������� ���       I (106270) HYBRID_RX: STATUS: Rx Count: 8
+[0;32mI (108271) HYBRID_RX: STATUS: Rx Count: 8[0m
+[0;32mI (110272) HYBRID_RX: STATUS: Rx Count: 8[0m
+[0;32mI (112273) HYBRID_RX: STATUS: Rx Count: 8[0m
+[0;32mI (114274) HYBRID_RX: STATUS: Rx Count: 8[0m
+[0;32mI (116275) HYBRID_RX: STATUS: Rx Count: 8[0m
+[0;32mI (118276) HYBRID_RX: STATUS: Rx Count: 8[0m
+[0;32mI (120277) HYBRID_RX: STATUS: Rx Count: 8[0m
+[0;32mI (122278) HYBRID_RX: STATUS: Rx Count: 8[0m
+[0;32mI (124279) HYBRID_RX: STATUS: Rx Count: 8[0m
+��� ��*i        �� ��������� � �������� ���
+�	�����  �����������
+�	�	�	���������� �       ��� ���i         ����� �������������������	�  ""#####$"#!#""! 	
+	��� ����       I (126280) HYBRID_RX: STATUS: Rx Count: 10
+[0;32mI (128281) HYBRID_RX: STATUS: Rx Count: 10[0m
+[0;32mI (130282) HYBRID_RX: STATUS: Rx Count: 10[0m
+[0;32mI (132283) HYBRID_RX: STATUS: Rx Count: 10[0m
+[0;32mI (134284) HYBRID_RX: STATUS: Rx Count: 10[0m
+[0;32mI (136285) HYBRID_RX: STATUS: Rx Count: 10[0m
+[0;32mI (138286) HYBRID_RX: STATUS: Rx Count: 10[0m
+[0;32mI (140287) HYBRID_RX: STATUS: Rx Count: 10[0m
+[0;32mI (142288) HYBRID_RX: STATUS: Rx Count: 10[0m
+[0;32mI (144289) HYBRID_RX: STATUS: Rx Count: 10[0m
+��� ��7�        �������������������������������������������������������  ������������������������������� �  	    �  �      I (146290) HYBRID_RX: STATUS: Rx Count: 11
+[0;32mI (148291) HYBRID_RX: STATUS: Rx Count: 11[0m
+[0;32mI (150292) HYBRID_RX: STATUS: Rx Count: 11[0m
+[0;32mI (152293) HYBRID_RX: STATUS: Rx Count: 11[0m
+[0;32mI (154294) HYBRID_RX: STATUS: Rx Count: 11[0m
+[0;32mI (156295) HYBRID_RX: STATUS: Rx Count: 11[0m
+[0;32mI (158296) HYBRID_RX: STATUS: Rx Count: 11[0m
+[0;32mI (160297) HYBRID_RX: STATUS: Rx Count: 11[0m
+[0;32mI (162298) HYBRID_RX: STATUS: Rx Count: 11[0m
+[0;32mI (164299) HYBRID_RX: STATUS: Rx Count: 11[0m
+��� ��h�	          �������������������������������� ���� 	  #%'&'(&#"! �������������������        ��� ���	        � �������������
+�����
+������	�
+�  $'*,,(&%�!��������������������� � �  �      I (166300) HYBRID_RX: STATUS: Rx Count: 13
+[0;32mI (168301) HYBRID_RX: STATUS: Rx Count: 13[0m
+[0;32mI (170302) HYBRID_RX: STATUS: Rx Count: 13[0m
+[0;32mI (172303) HYBRID_RX: STATUS: Rx Count: 13[0m

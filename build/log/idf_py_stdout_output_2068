@@ -1,0 +1,157 @@
+Command: C:\Espressif\python_env\idf5.5_py3.12_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c6 --revision 0 --decode-panic backtrace C:\Espressif\frameworks\esp-idf-v5.5.1\csi\blink\build\blink.elf C:\Espressif\frameworks\esp-idf-v5.5.1\csi\blink\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.12_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py'
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x15 (USB_UART_HPSYS),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40804c90
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875730,len:0x1748
+load:0x4086b910,len:0xddc
+load:0x4086e610,len:0x31dc
+entry 0x4086b91a
+[0;32mI (23) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Nov 23 2025 16:14:06[0m
+[0;32mI (23) boot: chip revision: v0.0[0m
+[0;32mI (23) boot: efuse block revision: v0.2[0m
+[0;32mI (24) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (24) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (24) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (25) boot: Enabling RNG early entropy source...[0m
+[0;32mI (25) boot: Partition Table:[0m
+[0;32mI (25) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (25) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (26) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (27) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (27) boot: End of partition table[0m
+[0;32mI (27) esp_image: segment 0: paddr=00010020 vaddr=42098020 size=1bca8h (113832) map[0m
+[0;32mI (50) esp_image: segment 1: paddr=0002bcd0 vaddr=40800000 size=04348h ( 17224) load[0m
+[0;32mI (54) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=9131ch (594716) map[0m
+[0;32mI (168) esp_image: segment 3: paddr=000c1344 vaddr=40804348 size=16ca4h ( 93348) load[0m
+[0;32mI (189) esp_image: segment 4: paddr=000d7ff0 vaddr=4081aff0 size=03604h ( 13828) load[0m
+[0;32mI (199) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (199) boot: Disabling RNG early entropy source...[0m
+[0;32mI (201) cpu_start: Unicore app[0m
+[0;32mI (209) cpu_start: Pro cpu start user code[0m
+[0;32mI (209) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (209) app_init: Application information:[0m
+[0;32mI (210) app_init: Project name:     blink[0m
+[0;32mI (210) app_init: App version:      v5.5.1[0m
+[0;32mI (210) app_init: Compile time:     Nov 23 2025 16:13:58[0m
+[0;32mI (210) app_init: ELF file SHA256:  8792c9678...[0m
+[0;32mI (210) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (211) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (211) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (211) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (211) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (212) heap_init: At 40842A20 len 00039BF0 (230 KiB): RAM[0m
+[0;32mI (212) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (212) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (213) spi_flash: detected chip: gd[0m
+[0;32mI (213) spi_flash: flash io: dio[0m
+[0;33mW (213) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (214) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (215) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (215) coexist: coex firmware version: b0bcc39[0m
+[0;32mI (215) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (216) main_task: Started on CPU0[0m
+[0;32mI (216) main_task: Calling app_main()[0m
+[0;32mI (231) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (231) net80211: net80211 rom version: 5b8dcfa[0m
+[0;32mI (233) wifi:wifi driver task: 4084ebec, prio:23, stack:6656, core=0[0m
+[0;32mI (241) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (242) wifi:wifi certification version: v7.0[0m
+[0;32mI (242) wifi:config NVS flash: enabled[0m
+[0;32mI (242) wifi:config nano formatting: disabled[0m
+[0;32mI (242) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band mode:0x1[0m
+[0;32mI (243) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (243) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (243) wifi:Init management short buffer num: 32[0m
+[0;32mI (243) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (243) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (244) wifi:Init static rx buffer size: 2212 (rxctrl:92, csi:512)[0m
+[0;32mI (244) wifi:Init static rx buffer num: 16[0m
+[0;32mI (244) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (245) wifi_init: rx ba win: 6[0m
+[0;32mI (245) wifi_init: accept mbox: 6[0m
+[0;32mI (245) wifi_init: tcpip mbox: 32[0m
+[0;32mI (245) wifi_init: udp mbox: 6[0m
+[0;32mI (245) wifi_init: tcp mbox: 6[0m
+[0;32mI (245) wifi_init: tcp tx win: 5760[0m
+[0;32mI (245) wifi_init: tcp rx win: 5760[0m
+[0;32mI (246) wifi_init: tcp mss: 1440[0m
+[0;32mI (246) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (246) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (246) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (246) phy_init: phy_version 341,a6c8fe6,Jul 30 2025,18:34:11[0m
+[0;33mW (288) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (288) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (289) wifi:(agc)0x600a7128:0xd2005800, min.avgNF:0xce->0xd2(dB), RCalCount:0x5, min.RRssi:0x800(-128.00)[0m
+[0;32mI (289) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;32mI (290) wifi:mode : sta (40:4c:ca:55:61:8c)[0m
+[0;32mI (290) wifi:enable tsf[0m
+[0;32mI (292) HUNTER_RX: Scanning for CSI_ROGUE_LINK...[0m
+[0;33mW (2793) HUNTER_RX: Target not found. Retrying in 1s...[0m
+[0;32mI (3793) HUNTER_RX: Scanning for CSI_ROGUE_LINK...[0m
+[0;33mW (6293) HUNTER_RX: Target not found. Retrying in 1s...[0m
+[0;32mI (7293) HUNTER_RX: Scanning for CSI_ROGUE_LINK...[0m
+[0;33mW (9793) HUNTER_RX: Target not found. Retrying in 1s...[0m
+[0;32mI (10793) HUNTER_RX: Scanning for CSI_ROGUE_LINK...[0m
+[0;33mW (13293) HUNTER_RX: Target not found. Retrying in 1s...[0m
+[0;32mI (14293) HUNTER_RX: Scanning for CSI_ROGUE_LINK...[0m
+[0;33mW (16793) HUNTER_RX: Target not found. Retrying in 1s...[0m
+[0;32mI (17793) HUNTER_RX: Scanning for CSI_ROGUE_LINK...[0m
+[0;33mW (20293) HUNTER_RX: Target not found. Retrying in 1s...[0m
+[0;32mI (21293) HUNTER_RX: Scanning for CSI_ROGUE_LINK...[0m
+[0;33mW (23793) HUNTER_RX: Target not found. Retrying in 1s...[0m
+[0;32mI (24793) HUNTER_RX: Scanning for CSI_ROGUE_LINK...[0m
+[0;33mW (27293) HUNTER_RX: Target not found. Retrying in 1s...[0m
+[0;32mI (28293) HUNTER_RX: Scanning for CSI_ROGUE_LINK...[0m
+[0;33mW (30793) HUNTER_RX: Target not found. Retrying in 1s...[0m
+[0;32mI (31793) HUNTER_RX: Scanning for CSI_ROGUE_LINK...[0m
+[0;33mW (34293) HUNTER_RX: Target not found. Retrying in 1s...[0m
+[0;32mI (35293) HUNTER_RX: Scanning for CSI_ROGUE_LINK...[0m
+[0;33mW (37793) HUNTER_RX: Target not found. Retrying in 1s...[0m
+[0;32mI (38793) HUNTER_RX: Scanning for CSI_ROGUE_LINK...[0m
+[0;33mW (41293) HUNTER_RX: Target not found. Retrying in 1s...[0m
+[0;32mI (42293) HUNTER_RX: Scanning for CSI_ROGUE_LINK...[0m
+[0;33mW (44793) HUNTER_RX: Target not found. Retrying in 1s...[0m
+[0;32mI (45793) HUNTER_RX: Scanning for CSI_ROGUE_LINK...[0m
+[0;33mW (48293) HUNTER_RX: Target not found. Retrying in 1s...[0m
+[0;32mI (49293) HUNTER_RX: Scanning for CSI_ROGUE_LINK...[0m
+[0;33mW (51793) HUNTER_RX: Target not found. Retrying in 1s...[0m
+[0;32mI (52793) HUNTER_RX: Scanning for CSI_ROGUE_LINK...[0m
+[0;33mW (55293) HUNTER_RX: Target not found. Retrying in 1s...[0m
+[0;32mI (56293) HUNTER_RX: Scanning for CSI_ROGUE_LINK...[0m
+[0;33mW (58793) HUNTER_RX: Target not found. Retrying in 1s...[0m
+[0;32mI (59793) HUNTER_RX: Scanning for CSI_ROGUE_LINK...[0m
+[0;33mW (62293) HUNTER_RX: Target not found. Retrying in 1s...[0m
+[0;32mI (63293) HUNTER_RX: Scanning for CSI_ROGUE_LINK...[0m
+[0;33mW (65793) HUNTER_RX: Target not found. Retrying in 1s...[0m
+[0;32mI (66793) HUNTER_RX: Scanning for CSI_ROGUE_LINK...[0m
+[0;33mW (69293) HUNTER_RX: Target not found. Retrying in 1s...[0m
+[0;32mI (70293) HUNTER_RX: Scanning for CSI_ROGUE_LINK...[0m
+[0;33mW (72793) HUNTER_RX: Target not found. Retrying in 1s...[0m
+[0;32mI (73793) HUNTER_RX: Scanning for CSI_ROGUE_LINK...[0m
+[0;33mW (76293) HUNTER_RX: Target not found. Retrying in 1s...[0m
+[0;32mI (77293) HUNTER_RX: Scanning for CSI_ROGUE_LINK...[0m
+[0;33mW (79793) HUNTER_RX: Target not found. Retrying in 1s...[0m
+[0;32mI (80793) HUNTER_RX: Scanning for CSI_ROGUE_LINK...[0m
+[0;33mW (83293) HUNTER_RX: Target not found. Retrying in 1s...[0m
+[0;32mI (84293) HUNTER_RX: Scanning for CSI_ROGUE_LINK...[0m
+[0;33mW (86793) HUNTER_RX: Target not found. Retrying in 1s...[0m
+[0;32mI (87793) HUNTER_RX: Scanning for CSI_ROGUE_LINK...[0m
+[0;33mW (90293) HUNTER_RX: Target not found. Retrying in 1s...[0m
+[0;32mI (91293) HUNTER_RX: Scanning for CSI_ROGUE_LINK...[0m
+[0;33mW (93793) HUNTER_RX: Target not found. Retrying in 1s...[0m
+[0;32mI (94793) HUNTER_RX: Scanning for CSI_ROGUE_LINK...[0m
+[0;33mW (97293) HUNTER_RX: Target not found. Retrying in 1s...[0m
+[0;32mI (98293) HUNTER_RX: Scanning for CSI_ROGUE_LINK...[0m
+[0;33mW (100793) HUNTER_RX: Target not found. Retrying in 1s...[0m
+[0;32mI (101793) HUNTER_RX: Scanning for CSI_ROGUE_LINK...[0m
+[0;33mW (104293) HUNTER_RX: Target not found. Retrying in 1s...[0m
+[0;32mI (105293) HUNTER_RX: Scanning for CSI_ROGUE_LINK...[0m
+[0;33mW (107793) HUNTER_RX: Target not found. Retrying in 1s...[0m
+[0;32mI (108793) HUNTER_RX: Scanning for CSI_ROGUE_LINK...[0m
+[0;33mW (111293) HUNTER_RX: Target not found. Retrying in 1s...[0m
+[0;32mI (112293) HUNTER_RX: Scanning for CSI_ROGUE_LINK...[0m

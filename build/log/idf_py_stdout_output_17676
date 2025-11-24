@@ -1,0 +1,149 @@
+Command: C:\Espressif\python_env\idf5.5_py3.12_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COm5 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c6 --revision 0 --decode-panic backtrace C:\Espressif\frameworks\esp-idf-v5.5.1\csi\blink\build\blink.elf C:\Espressif\frameworks\esp-idf-v5.5.1\csi\blink\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.12_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py'
+ep 19 2022
+rst:0x15 (USB_UART_HPSYS),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40804b38
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875730,len:0x1748
+load:0x4086b910,len:0xddc
+load:0x4086e610,len:0x31dc
+entry 0x4086b91a
+[0;32mI (24) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 23 2025 16:14:06[0m
+[0;32mI (25) boot: chip revision: v0.0[0m
+[0;32mI (25) boot: efuse block revision: v0.2[0m
+[0;32mI (25) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (26) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (26) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (26) boot: Enabling RNG early entropy source...[0m
+[0;32mI (27) boot: Partition Table:[0m
+[0;32mI (27) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (27) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (28) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (28) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (29) boot: End of partition table[0m
+[0;32mI (29) esp_image: segment 0: paddr=00010020 vaddr=42090020 size=1ae3ch (110140) map[0m
+[0;32mI (51) esp_image: segment 1: paddr=0002ae64 vaddr=40800000 size=051b4h ( 20916) load[0m
+[0;32mI (56) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=8f714h (587540) map[0m
+[0;32mI (169) esp_image: segment 3: paddr=000bf73c vaddr=408051b4 size=181d0h ( 98768) load[0m
+[0;32mI (196) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (197) boot: Disabling RNG early entropy source...[0m
+[0;32mI (198) cpu_start: Unicore app[0m
+[0;32mI (206) cpu_start: Pro cpu start user code[0m
+[0;32mI (206) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (206) app_init: Application information:[0m
+[0;32mI (207) app_init: Project name:     blink[0m
+[0;32mI (207) app_init: App version:      v5.5.1[0m
+[0;32mI (207) app_init: Compile time:     Nov 23 2025 16:13:58[0m
+[0;32mI (207) app_init: ELF file SHA256:  79c8ce0d9...[0m
+[0;32mI (207) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (208) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (208) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (208) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (208) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (209) heap_init: At 408227B0 len 00059E60 (359 KiB): RAM[0m
+[0;32mI (209) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (209) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (210) spi_flash: detected chip: gd[0m
+[0;32mI (210) spi_flash: flash io: dio[0m
+[0;33mW (210) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (211) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (212) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (212) coexist: coex firmware version: b0bcc39[0m
+[0;32mI (212) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (213) main_task: Started on CPU0[0m
+[0;32mI (213) main_task: Calling app_main()[0m
+[0;32mI (228) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (228) net80211: net80211 rom version: 5b8dcfa[0m
+[0;32mI (230) wifi:wifi driver task: 4082a5c0, prio:23, stack:6656, core=0[0m
+[0;32mI (238) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (239) wifi:wifi certification version: v7.0[0m
+[0;32mI (239) wifi:config NVS flash: enabled[0m
+[0;32mI (239) wifi:config nano formatting: disabled[0m
+[0;32mI (239) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band mode:0x1[0m
+[0;32mI (240) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (240) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (240) wifi:Init management short buffer num: 32[0m
+[0;32mI (240) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (240) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (241) wifi:Init static rx buffer size: 2212 (rxctrl:92, csi:512)[0m
+[0;32mI (241) wifi:Init static rx buffer num: 16[0m
+[0;32mI (241) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (242) wifi_init: rx ba win: 6[0m
+[0;32mI (242) wifi_init: accept mbox: 6[0m
+[0;32mI (242) wifi_init: tcpip mbox: 32[0m
+[0;32mI (242) wifi_init: udp mbox: 6[0m
+[0;32mI (242) wifi_init: tcp mbox: 6[0m
+[0;32mI (242) wifi_init: tcp tx win: 5760[0m
+[0;32mI (242) wifi_init: tcp rx win: 5760[0m
+[0;32mI (243) wifi_init: tcp mss: 1440[0m
+[0;32mI (243) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (243) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (243) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (243) phy_init: phy_version 341,a6c8fe6,Jul 30 2025,18:34:11[0m
+[0;32mI (305) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;33mW (361) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (361) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (362) wifi:(agc)0x600a7128:0xd20fb800, min.avgNF:0xce->0xd2(dB), RCalCount:0xfb, min.RRssi:0x800(-128.00)[0m
+[0;32mI (362) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;32mI (363) wifi:ic_enable_sniffer[0m
+[0;32mI (363) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (364) main_task: Returned from app_main()[0m
+[0;32mI (764) SCANNER: Scanning Ch 1... (Noise: 75 pps)[0m
+[0;32mI (1164) SCANNER: Scanning Ch 2... (Noise: 40 pps)[0m
+[0;32mI (1564) SCANNER: Scanning Ch 3... (Noise: 2 pps)[0m
+[0;32mI (1964) SCANNER: Scanning Ch 4... (Noise: 0 pps)[0m
+[0;33mW (2364) SCANNER: >>> FOUND BLASTER ON CHANNEL 5! <<<[0m
+[0;32mI (2364) SCANNER: PPS: 940 | RSSI: -33 | Rate Code: 0[0m
+[0;33mW (2364) SCANNER: WARNING: Low Rate (Legacy). CSI might be empty.[0m
+[0;32mI (3364) SCANNER: Locked on Ch 5 | PPS: 1363[0m
+[0;32mI (4364) SCANNER: Locked on Ch 5 | PPS: 979[0m
+[0;32mI (5364) SCANNER: Locked on Ch 5 | PPS: 978[0m
+[0;32mI (6364) SCANNER: Locked on Ch 5 | PPS: 993[0m
+[0;32mI (7364) SCANNER: Locked on Ch 5 | PPS: 981[0m
+[0;32mI (8364) SCANNER: Locked on Ch 5 | PPS: 987[0m
+[0;32mI (9364) SCANNER: Locked on Ch 5 | PPS: 956[0m
+[0;32mI (10364) SCANNER: Locked on Ch 5 | PPS: 971[0m
+[0;32mI (11364) SCANNER: Locked on Ch 5 | PPS: 956[0m
+[0;32mI (12364) SCANNER: Locked on Ch 5 | PPS: 969[0m
+[0;32mI (13364) SCANNER: Locked on Ch 5 | PPS: 972[0m
+[0;32mI (14364) SCANNER: Locked on Ch 5 | PPS: 951[0m
+[0;32mI (15364) SCANNER: Locked on Ch 5 | PPS: 968[0m
+[0;32mI (16364) SCANNER: Locked on Ch 5 | PPS: 962[0m
+[0;32mI (17364) SCANNER: Locked on Ch 5 | PPS: 979[0m
+[0;32mI (18364) SCANNER: Locked on Ch 5 | PPS: 953[0m
+[0;32mI (19364) SCANNER: Locked on Ch 5 | PPS: 983[0m
+[0;32mI (20364) SCANNER: Locked on Ch 5 | PPS: 979[0m
+[0;32mI (21364) SCANNER: Locked on Ch 5 | PPS: 950[0m
+[0;32mI (22364) SCANNER: Locked on Ch 5 | PPS: 974[0m
+[0;32mI (23364) SCANNER: Locked on Ch 5 | PPS: 950[0m
+[0;32mI (24364) SCANNER: Locked on Ch 5 | PPS: 953[0m
+[0;32mI (25364) SCANNER: Locked on Ch 5 | PPS: 955[0m
+[0;32mI (26364) SCANNER: Locked on Ch 5 | PPS: 988[0m
+[0;32mI (27364) SCANNER: Locked on Ch 5 | PPS: 925[0m
+[0;32mI (28364) SCANNER: Locked on Ch 5 | PPS: 931[0m
+[0;32mI (29364) SCANNER: Locked on Ch 5 | PPS: 944[0m
+[0;32mI (30364) SCANNER: Locked on Ch 5 | PPS: 913[0m
+[0;32mI (31364) SCANNER: Locked on Ch 5 | PPS: 942[0m
+[0;32mI (32364) SCANNER: Locked on Ch 5 | PPS: 954[0m
+[0;32mI (33364) SCANNER: Locked on Ch 5 | PPS: 942[0m
+[0;32mI (34364) SCANNER: Locked on Ch 5 | PPS: 952[0m
+[0;32mI (35364) SCANNER: Locked on Ch 5 | PPS: 948[0m
+[0;32mI (36364) SCANNER: Locked on Ch 5 | PPS: 957[0m
+[0;32mI (37364) SCANNER: Locked on Ch 5 | PPS: 897[0m
+[0;32mI (38364) SCANNER: Locked on Ch 5 | PPS: 893[0m
+[0;32mI (39364) SCANNER: Locked on Ch 5 | PPS: 933[0m
+[0;32mI (40364) SCANNER: Locked on Ch 5 | PPS: 925[0m
+[0;32mI (41364) SCANNER: Locked on Ch 5 | PPS: 883[0m
+[0;32mI (42364) SCANNER: Locked on Ch 5 | PPS: 887[0m
+[0;32mI (43364) SCANNER: Locked on Ch 5 | PPS: 886[0m
+[0;32mI (44364) SCANNER: Locked on Ch 5 | PPS: 859[0m
+[0;32mI (45364) SCANNER: Locked on Ch 5 | PPS: 919[0m
+[0;32mI (46364) SCANNER: Locked on Ch 5 | PPS: 892[0m
+[0;32mI (47364) SCANNER: Locked on Ch 5 | PPS: 874[0m
+[0;32mI (48364) SCANNER: Locked on Ch 5 | PPS: 853[0m
+[0;32mI (49364) SCANNER: Locked on Ch 5 | PPS: 93[0m
+[0;32mI (50364) SCANNER: Locked on Ch 5 | PPS: 8[0m
+[0;32mI (51364) SCANNER: Locked on Ch 5 | PPS: 9[0m

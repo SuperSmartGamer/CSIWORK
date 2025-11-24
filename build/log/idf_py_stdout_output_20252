@@ -1,0 +1,352 @@
+Command: C:\Espressif\python_env\idf5.5_py3.12_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM11 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c6 --revision 0 --decode-panic backtrace C:\Espressif\frameworks\esp-idf-v5.5.1\csi\blink\build\blink.elf C:\Espressif\frameworks\esp-idf-v5.5.1\csi\blink\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.12_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py'
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x15 (USB_UART_HPSYS),boot:0x6c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40022ee0
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875730,len:0x1748
+load:0x4086b910,len:0xddc
+load:0x4086e610,len:0x31dc
+entry 0x4086b91a
+[0;32mI (23) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Nov 23 2025 16:14:06[0m
+[0;32mI (23) boot: chip revision: v0.0[0m
+[0;32mI (24) boot: efuse block revision: v0.2[0m
+[0;32mI (24) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (24) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (24) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (25) boot: Enabling RNG early entropy source...[0m
+[0;32mI (25) boot: Partition Table:[0m
+[0;32mI (25) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (26) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (26) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (27) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (27) boot: End of partition table[0m
+[0;32mI (28) esp_image: segment 0: paddr=00010020 vaddr=42098020 size=1b178h (110968) map[0m
+[0;32mI (50) esp_image: segment 1: paddr=0002b1a0 vaddr=40800000 size=04e78h ( 20088) load[0m
+[0;32mI (55) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=90788h (591752) map[0m
+[0;32mI (168) esp_image: segment 3: paddr=000c07b0 vaddr=40804e78 size=184cch ( 99532) load[0m
+[0;32mI (196) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (196) boot: Disabling RNG early entropy source...[0m
+[0;32mI (197) cpu_start: Unicore app[0m
+[0;32mI (206) cpu_start: Pro cpu start user code[0m
+[0;32mI (206) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (206) app_init: Application information:[0m
+[0;32mI (206) app_init: Project name:     blink[0m
+[0;32mI (206) app_init: App version:      v5.5.1[0m
+[0;32mI (207) app_init: Compile time:     Nov 23 2025 16:13:58[0m
+[0;32mI (207) app_init: ELF file SHA256:  00ae87890...[0m
+[0;32mI (207) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (207) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (207) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (208) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (208) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (208) heap_init: At 408227A0 len 00059E70 (359 KiB): RAM[0m
+[0;32mI (208) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (209) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (210) spi_flash: detected chip: gd[0m
+[0;32mI (210) spi_flash: flash io: dio[0m
+[0;33mW (210) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (211) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (211) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (212) coexist: coex firmware version: b0bcc39[0m
+[0;32mI (212) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (212) main_task: Started on CPU0[0m
+[0;32mI (212) main_task: Calling app_main()[0m
+[0;32mI (227) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (227) net80211: net80211 rom version: 5b8dcfa[0m
+[0;32mI (228) wifi:wifi driver task: 4082a6d0, prio:23, stack:6656, core=0[0m
+[0;32mI (236) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (236) wifi:wifi certification version: v7.0[0m
+[0;32mI (236) wifi:config NVS flash: enabled[0m
+[0;32mI (237) wifi:config nano formatting: disabled[0m
+[0;32mI (237) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band mode:0x1[0m
+[0;32mI (237) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (238) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (238) wifi:Init management short buffer num: 32[0m
+[0;32mI (238) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (238) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (238) wifi:Init static rx buffer size: 2212 (rxctrl:92, csi:512)[0m
+[0;32mI (239) wifi:Init static rx buffer num: 16[0m
+[0;32mI (239) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (240) wifi_init: rx ba win: 6[0m
+[0;32mI (240) wifi_init: accept mbox: 6[0m
+[0;32mI (240) wifi_init: tcpip mbox: 32[0m
+[0;32mI (240) wifi_init: udp mbox: 6[0m
+[0;32mI (240) wifi_init: tcp mbox: 6[0m
+[0;32mI (240) wifi_init: tcp tx win: 5760[0m
+[0;32mI (240) wifi_init: tcp rx win: 5760[0m
+[0;32mI (240) wifi_init: tcp mss: 1440[0m
+[0;32mI (240) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (240) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (241) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (243) phy_init: phy_version 341,a6c8fe6,Jul 30 2025,18:34:11[0m
+[0;32mI (287) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;33mW (298) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (298) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (299) wifi:(agc)0x600a7128:0xd2057800, min.avgNF:0xce->0xd2(dB), RCalCount:0x57, min.RRssi:0x800(-128.00)[0m
+[0;32mI (300) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;32mI (300) wifi:mode : softAP (40:4c:ca:55:b0:99)[0m
+[0;32mI (304) wifi:Total power save buffer number: 16[0m
+[0;32mI (304) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (304) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (306) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (306) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (307) GHOST_TX: ENGAGING GHOST PROTOCOL ON CHANNEL 6[0m
+[0;32mI (311) main_task: Returned from app_main()[0m
+[0;32mI (1308) GHOST_TX: TX STATUS | PPS: 2080[0m
+[0;32mI (2309) GHOST_TX: TX STATUS | PPS: 2051[0m
+[0;32mI (3310) GHOST_TX: TX STATUS | PPS: 2022[0m
+[0;32mI (4311) GHOST_TX: TX STATUS | PPS: 2049[0m
+[0;32mI (5312) GHOST_TX: TX STATUS | PPS: 2039[0m
+[0;32mI (6313) GHOST_TX: TX STATUS | PPS: 2042[0m
+[0;32mI (7314) GHOST_TX: TX STATUS | PPS: 2047[0m
+[0;32mI (7727) wifi:new:<6,0>, old:<6,1>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (7728) wifi:(trc)phytype:CBW20-SGI, snr:92, maxRate:0, highestRateIdx:0[0m
+[0;33mW (7729) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (7729) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:92, ampduState:wait operational[0m
+[0;32mI (7730) wifi:ifidx:1, rssi:-3, nf:-95, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (7730) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (7730) wifi:station: 40:4c:ca:55:61:8c join, AID=1, bgn, 20[0m
+[0;32mI (8315) GHOST_TX: TX STATUS | PPS: 2017[0m
+[0;32mI (9316) GHOST_TX: TX STATUS | PPS: 2043[0m
+[0;32mI (10317) GHOST_TX: TX STATUS | PPS: 2035[0m
+[0;32mI (11318) GHOST_TX: TX STATUS | PPS: 2034[0m
+[0;32mI (11748) wifi:station: 40:4c:ca:55:61:8c leave, AID = 1, reason = 15, bss_flags is 34245730, bss:0x40826320[0m
+[0;32mI (11748) wifi:new:<6,0>, old:<6,0>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (11749) wifi:new:<6,1>, old:<6,0>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (12319) GHOST_TX: TX STATUS | PPS: 2034[0m
+[0;32mI (13320) GHOST_TX: TX STATUS | PPS: 2036[0m
+[0;32mI (14197) wifi:new:<6,0>, old:<6,1>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (14198) wifi:(trc)phytype:CBW20-SGI, snr:92, maxRate:0, highestRateIdx:0[0m
+[0;33mW (14199) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (14199) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:92, ampduState:wait operational[0m
+[0;32mI (14199) wifi:ifidx:1, rssi:-3, nf:-95, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (14200) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (14200) wifi:station: 40:4c:ca:55:61:8c join, AID=1, bgn, 20[0m
+[0;32mI (14321) GHOST_TX: TX STATUS | PPS: 2025[0m
+[0;32mI (15322) GHOST_TX: TX STATUS | PPS: 2028[0m
+[0;32mI (16323) GHOST_TX: TX STATUS | PPS: 2035[0m
+[0;32mI (17324) GHOST_TX: TX STATUS | PPS: 2032[0m
+[0;32mI (18213) wifi:station: 40:4c:ca:55:61:8c leave, AID = 1, reason = 15, bss_flags is 34245730, bss:0x408261c0[0m
+[0;32mI (18214) wifi:new:<6,0>, old:<6,0>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (18214) wifi:new:<6,1>, old:<6,0>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (18325) GHOST_TX: TX STATUS | PPS: 2026[0m
+[0;32mI (19326) GHOST_TX: TX STATUS | PPS: 2043[0m
+[0;32mI (20327) GHOST_TX: TX STATUS | PPS: 2028[0m
+[0;32mI (20660) wifi:new:<6,0>, old:<6,1>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (20661) wifi:(trc)phytype:CBW20-SGI, snr:92, maxRate:0, highestRateIdx:0[0m
+[0;33mW (20662) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (20662) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:92, ampduState:wait operational[0m
+[0;32mI (20663) wifi:ifidx:1, rssi:-3, nf:-95, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (20663) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (20663) wifi:station: 40:4c:ca:55:61:8c join, AID=1, bgn, 20[0m
+[0;32mI (21328) GHOST_TX: TX STATUS | PPS: 2019[0m
+[0;32mI (22329) GHOST_TX: TX STATUS | PPS: 2050[0m
+[0;32mI (23330) GHOST_TX: TX STATUS | PPS: 2024[0m
+[0;32mI (24331) GHOST_TX: TX STATUS | PPS: 2037[0m
+[0;32mI (24675) wifi:station: 40:4c:ca:55:61:8c leave, AID = 1, reason = 15, bss_flags is 34245730, bss:0x408257f4[0m
+[0;32mI (24675) wifi:new:<6,0>, old:<6,0>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (24676) wifi:new:<6,1>, old:<6,0>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (25332) GHOST_TX: TX STATUS | PPS: 2030[0m
+[0;32mI (26333) GHOST_TX: TX STATUS | PPS: 2041[0m
+[0;32mI (27166) wifi:new:<6,0>, old:<6,1>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (27168) wifi:(trc)phytype:CBW20-SGI, snr:92, maxRate:0, highestRateIdx:0[0m
+[0;33mW (27168) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (27168) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:92, ampduState:wait operational[0m
+[0;32mI (27169) wifi:ifidx:1, rssi:-3, nf:-95, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (27169) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (27169) wifi:station: 40:4c:ca:55:61:8c join, AID=1, bgn, 20[0m
+[0;32mI (27334) GHOST_TX: TX STATUS | PPS: 2029[0m
+[0;32mI (28335) GHOST_TX: TX STATUS | PPS: 2030[0m
+[0;32mI (29336) GHOST_TX: TX STATUS | PPS: 2043[0m
+[0;32mI (30337) GHOST_TX: TX STATUS | PPS: 2040[0m
+[0;32mI (31179) wifi:station: 40:4c:ca:55:61:8c leave, AID = 1, reason = 15, bss_flags is 34245730, bss:0x408257c8[0m
+[0;32mI (31180) wifi:new:<6,0>, old:<6,0>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (31180) wifi:new:<6,1>, old:<6,0>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (31338) GHOST_TX: TX STATUS | PPS: 2023[0m
+[0;32mI (32339) GHOST_TX: TX STATUS | PPS: 2042[0m
+[0;32mI (33340) GHOST_TX: TX STATUS | PPS: 2047[0m
+[0;32mI (33617) wifi:new:<6,0>, old:<6,1>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (33619) wifi:(trc)phytype:CBW20-SGI, snr:91, maxRate:0, highestRateIdx:0[0m
+[0;33mW (33619) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (33619) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:91, ampduState:wait operational[0m
+[0;32mI (33620) wifi:ifidx:1, rssi:-3, nf:-94, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (33620) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (33620) wifi:station: 40:4c:ca:55:61:8c join, AID=1, bgn, 20[0m
+[0;32mI (34341) GHOST_TX: TX STATUS | PPS: 2010[0m
+[0;32mI (35342) GHOST_TX: TX STATUS | PPS: 1978[0m
+[0;32mI (36343) GHOST_TX: TX STATUS | PPS: 2046[0m
+[0;32mI (37344) GHOST_TX: TX STATUS | PPS: 2024[0m
+[0;32mI (37629) wifi:station: 40:4c:ca:55:61:8c leave, AID = 1, reason = 15, bss_flags is 34245730, bss:0x40839208[0m
+[0;32mI (37629) wifi:new:<6,0>, old:<6,0>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (37630) wifi:new:<6,1>, old:<6,0>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (38345) GHOST_TX: TX STATUS | PPS: 2032[0m
+[0;32mI (39346) GHOST_TX: TX STATUS | PPS: 2047[0m
+[0;32mI (40065) wifi:new:<6,0>, old:<6,1>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (40066) wifi:(trc)phytype:CBW20-SGI, snr:91, maxRate:0, highestRateIdx:0[0m
+[0;33mW (40066) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (40067) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:91, ampduState:wait operational[0m
+[0;32mI (40067) wifi:ifidx:1, rssi:-3, nf:-94, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (40068) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (40068) wifi:station: 40:4c:ca:55:61:8c join, AID=1, bgn, 20[0m
+[0;32mI (40347) GHOST_TX: TX STATUS | PPS: 2026[0m
+[0;32mI (41348) GHOST_TX: TX STATUS | PPS: 2031[0m
+[0;32mI (42349) GHOST_TX: TX STATUS | PPS: 2040[0m
+[0;32mI (43350) GHOST_TX: TX STATUS | PPS: 2030[0m
+[0;32mI (44076) wifi:station: 40:4c:ca:55:61:8c leave, AID = 1, reason = 15, bss_flags is 34245730, bss:0x40839208[0m
+[0;32mI (44076) wifi:new:<6,0>, old:<6,0>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (44077) wifi:new:<6,1>, old:<6,0>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (44351) GHOST_TX: TX STATUS | PPS: 2041[0m
+[0;32mI (45352) GHOST_TX: TX STATUS | PPS: 2028[0m
+[0;32mI (46353) GHOST_TX: TX STATUS | PPS: 2014[0m
+[0;32mI (46516) wifi:new:<6,0>, old:<6,1>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (46517) wifi:(trc)phytype:CBW20-SGI, snr:91, maxRate:0, highestRateIdx:0[0m
+[0;33mW (46517) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (46518) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:91, ampduState:wait operational[0m
+[0;32mI (46518) wifi:ifidx:1, rssi:-3, nf:-94, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (46519) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (46519) wifi:station: 40:4c:ca:55:61:8c join, AID=1, bgn, 20[0m
+[0;32mI (47354) GHOST_TX: TX STATUS | PPS: 2000[0m
+[0;32mI (48355) GHOST_TX: TX STATUS | PPS: 2031[0m
+[0;32mI (49356) GHOST_TX: TX STATUS | PPS: 2040[0m
+[0;32mI (50357) GHOST_TX: TX STATUS | PPS: 2028[0m
+[0;32mI (50526) wifi:station: 40:4c:ca:55:61:8c leave, AID = 1, reason = 15, bss_flags is 34245730, bss:0x40839208[0m
+[0;32mI (50526) wifi:new:<6,0>, old:<6,0>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (50527) wifi:new:<6,1>, old:<6,0>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (51358) GHOST_TX: TX STATUS | PPS: 2003[0m
+[0;32mI (52359) GHOST_TX: TX STATUS | PPS: 2004[0m
+[0;32mI (52973) wifi:new:<6,0>, old:<6,1>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (52974) wifi:(trc)phytype:CBW20-SGI, snr:93, maxRate:0, highestRateIdx:0[0m
+[0;33mW (52975) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (52975) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:93, ampduState:wait operational[0m
+[0;32mI (52976) wifi:ifidx:1, rssi:-1, nf:-94, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (52976) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (52976) wifi:station: 40:4c:ca:55:61:8c join, AID=1, bgn, 20[0m
+[0;32mI (53360) GHOST_TX: TX STATUS | PPS: 1986[0m
+[0;32mI (54361) GHOST_TX: TX STATUS | PPS: 2043[0m
+[0;32mI (55362) GHOST_TX: TX STATUS | PPS: 2041[0m
+[0;32mI (56363) GHOST_TX: TX STATUS | PPS: 2045[0m
+[0;32mI (56982) wifi:station: 40:4c:ca:55:61:8c leave, AID = 1, reason = 15, bss_flags is 34245730, bss:0x40839208[0m
+[0;32mI (56982) wifi:new:<6,0>, old:<6,0>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (56983) wifi:new:<6,1>, old:<6,0>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (57364) GHOST_TX: TX STATUS | PPS: 2016[0m
+[0;32mI (58365) GHOST_TX: TX STATUS | PPS: 2031[0m
+[0;32mI (59366) GHOST_TX: TX STATUS | PPS: 2032[0m
+[0;32mI (59411) wifi:new:<6,0>, old:<6,1>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (59412) wifi:(trc)phytype:CBW20-SGI, snr:92, maxRate:0, highestRateIdx:0[0m
+[0;33mW (59412) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (59413) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:92, ampduState:wait operational[0m
+[0;32mI (59413) wifi:ifidx:1, rssi:-2, nf:-94, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (59414) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (59414) wifi:station: 40:4c:ca:55:61:8c join, AID=1, bgn, 20[0m
+[0;32mI (60367) GHOST_TX: TX STATUS | PPS: 2015[0m
+[0;32mI (61368) GHOST_TX: TX STATUS | PPS: 2036[0m
+[0;32mI (62369) GHOST_TX: TX STATUS | PPS: 2037[0m
+[0;32mI (63370) GHOST_TX: TX STATUS | PPS: 2040[0m
+[0;32mI (63418) wifi:station: 40:4c:ca:55:61:8c leave, AID = 1, reason = 15, bss_flags is 34245730, bss:0x40839208[0m
+[0;32mI (63419) wifi:new:<6,0>, old:<6,0>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (63419) wifi:new:<6,1>, old:<6,0>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (64371) GHOST_TX: TX STATUS | PPS: 2025[0m
+[0;32mI (65372) GHOST_TX: TX STATUS | PPS: 2041[0m
+[0;32mI (65849) wifi:new:<6,0>, old:<6,1>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (65850) wifi:(trc)phytype:CBW20-SGI, snr:92, maxRate:0, highestRateIdx:0[0m
+[0;33mW (65850) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (65851) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:92, ampduState:wait operational[0m
+[0;32mI (65851) wifi:ifidx:1, rssi:-2, nf:-94, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (65852) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (65852) wifi:station: 40:4c:ca:55:61:8c join, AID=1, bgn, 20[0m
+[0;32mI (66373) GHOST_TX: TX STATUS | PPS: 2020[0m
+[0;32mI (67374) GHOST_TX: TX STATUS | PPS: 2047[0m
+[0;32mI (68375) GHOST_TX: TX STATUS | PPS: 2037[0m
+[0;32mI (69376) GHOST_TX: TX STATUS | PPS: 2037[0m
+[0;32mI (69855) wifi:station: 40:4c:ca:55:61:8c leave, AID = 1, reason = 15, bss_flags is 34245730, bss:0x40839838[0m
+[0;32mI (69855) wifi:new:<6,0>, old:<6,0>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (69856) wifi:new:<6,1>, old:<6,0>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (70377) GHOST_TX: TX STATUS | PPS: 2031[0m
+[0;32mI (71378) GHOST_TX: TX STATUS | PPS: 2045[0m
+[0;32mI (72283) wifi:new:<6,0>, old:<6,1>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (72284) wifi:(trc)phytype:CBW20-SGI, snr:93, maxRate:0, highestRateIdx:0[0m
+[0;33mW (72285) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (72285) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:93, ampduState:wait operational[0m
+[0;32mI (72285) wifi:ifidx:1, rssi:-1, nf:-94, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (72286) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (72286) wifi:station: 40:4c:ca:55:61:8c join, AID=1, bgn, 20[0m
+[0;32mI (72379) GHOST_TX: TX STATUS | PPS: 2019[0m
+[0;32mI (73380) GHOST_TX: TX STATUS | PPS: 2038[0m
+[0;32mI (74381) GHOST_TX: TX STATUS | PPS: 2038[0m
+[0;32mI (75382) GHOST_TX: TX STATUS | PPS: 2036[0m
+[0;32mI (76290) wifi:station: 40:4c:ca:55:61:8c leave, AID = 1, reason = 15, bss_flags is 34245730, bss:0x40839838[0m
+[0;32mI (76291) wifi:new:<6,0>, old:<6,0>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (76291) wifi:new:<6,1>, old:<6,0>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (76383) GHOST_TX: TX STATUS | PPS: 2034[0m
+[0;32mI (77384) GHOST_TX: TX STATUS | PPS: 2034[0m
+[0;32mI (78385) GHOST_TX: TX STATUS | PPS: 2027[0m
+[0;32mI (78759) wifi:new:<6,0>, old:<6,1>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (78760) wifi:(trc)phytype:CBW20-SGI, snr:63, maxRate:0, highestRateIdx:0[0m
+[0;33mW (78760) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (78761) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:63, ampduState:wait operational[0m
+[0;32mI (78761) wifi:ifidx:1, rssi:-31, nf:-94, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (78762) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (78762) wifi:station: 40:4c:ca:55:61:8c join, AID=1, bgn, 20[0m
+[0;32mI (79386) GHOST_TX: TX STATUS | PPS: 2021[0m
+[0;32mI (80387) GHOST_TX: TX STATUS | PPS: 2041[0m
+[0;32mI (81388) GHOST_TX: TX STATUS | PPS: 2036[0m
+[0;32mI (82389) GHOST_TX: TX STATUS | PPS: 2033[0m
+[0;32mI (82766) wifi:station: 40:4c:ca:55:61:8c leave, AID = 1, reason = 15, bss_flags is 34245730, bss:0x40839838[0m
+[0;32mI (82766) wifi:new:<6,0>, old:<6,0>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (82767) wifi:new:<6,1>, old:<6,0>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (83390) GHOST_TX: TX STATUS | PPS: 2027[0m
+[0;32mI (84391) GHOST_TX: TX STATUS | PPS: 2044[0m
+[0;32mI (85197) wifi:new:<6,0>, old:<6,1>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (85198) wifi:(trc)phytype:CBW20-SGI, snr:59, maxRate:0, highestRateIdx:0[0m
+[0;33mW (85198) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (85199) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:59, ampduState:wait operational[0m
+[0;32mI (85199) wifi:ifidx:1, rssi:-35, nf:-94, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (85199) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (85200) wifi:station: 40:4c:ca:55:61:8c join, AID=1, bgn, 20[0m
+[0;32mI (85392) GHOST_TX: TX STATUS | PPS: 2027[0m
+[0;32mI (86393) GHOST_TX: TX STATUS | PPS: 2026[0m
+[0;32mI (87394) GHOST_TX: TX STATUS | PPS: 2034[0m
+[0;32mI (88395) GHOST_TX: TX STATUS | PPS: 2043[0m
+[0;32mI (89203) wifi:station: 40:4c:ca:55:61:8c leave, AID = 1, reason = 15, bss_flags is 34245730, bss:0x40839838[0m
+[0;32mI (89203) wifi:new:<6,0>, old:<6,0>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (89204) wifi:new:<6,1>, old:<6,0>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (89396) GHOST_TX: TX STATUS | PPS: 2038[0m
+[0;32mI (90397) GHOST_TX: TX STATUS | PPS: 2035[0m
+[0;32mI (91398) GHOST_TX: TX STATUS | PPS: 2031[0m
+[0;32mI (91629) wifi:new:<6,0>, old:<6,1>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (91630) wifi:(trc)phytype:CBW20-SGI, snr:58, maxRate:0, highestRateIdx:0[0m
+[0;33mW (91630) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (91631) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:58, ampduState:wait operational[0m
+[0;32mI (91631) wifi:ifidx:1, rssi:-36, nf:-94, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (91631) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (91632) wifi:station: 40:4c:ca:55:61:8c join, AID=1, bgn, 20[0m
+[0;32mI (92399) GHOST_TX: TX STATUS | PPS: 2015[0m
+[0;32mI (93400) GHOST_TX: TX STATUS | PPS: 2032[0m
+[0;32mI (94401) GHOST_TX: TX STATUS | PPS: 2041[0m
+[0;32mI (95402) GHOST_TX: TX STATUS | PPS: 2034[0m
+[0;32mI (95635) wifi:station: 40:4c:ca:55:61:8c leave, AID = 1, reason = 15, bss_flags is 34245730, bss:0x40839838[0m
+[0;32mI (95635) wifi:new:<6,0>, old:<6,0>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (95635) wifi:new:<6,1>, old:<6,0>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (96403) GHOST_TX: TX STATUS | PPS: 2021[0m
+[0;32mI (97404) GHOST_TX: TX STATUS | PPS: 2044[0m
+[0;32mI (98062) wifi:new:<6,0>, old:<6,1>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (98063) wifi:(trc)phytype:CBW20-SGI, snr:58, maxRate:0, highestRateIdx:0[0m
+[0;33mW (98064) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (98064) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:58, ampduState:wait operational[0m
+[0;32mI (98064) wifi:ifidx:1, rssi:-36, nf:-94, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (98065) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (98065) wifi:station: 40:4c:ca:55:61:8c join, AID=1, bgn, 20[0m
+[0;32mI (98405) GHOST_TX: TX STATUS | PPS: 2026[0m
+[0;32mI (99406) GHOST_TX: TX STATUS | PPS: 2037[0m
+[0;32mI (100407) GHOST_TX: TX STATUS | PPS: 2030[0m
+[0;32mI (101408) GHOST_TX: TX STATUS | PPS: 2037[0m
+[0;32mI (102068) wifi:station: 40:4c:ca:55:61:8c leave, AID = 1, reason = 15, bss_flags is 34245730, bss:0x40839838[0m
+[0;32mI (102068) wifi:new:<6,0>, old:<6,0>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (102069) wifi:new:<6,1>, old:<6,0>, ap:<6,1>, sta:<255,255>, prof:6, snd_ch_cfg:0x0[0m
+[0;32mI (102409) GHOST_TX: TX STATUS | PPS: 2030[0m
+[0;32mI (103410) GHOST_TX: TX STATUS | PPS: 2031[0m

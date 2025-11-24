@@ -1,0 +1,32 @@
+Command: ninja all
+[0/1] Re-running CMake...
+-- Minimal build - OFF
+-- ccache will be used for faster recompilation
+-- Building ESP-IDF components for target esp32c6
+NOTICE: Dependencies lock doesn't exist, solving dependencies.
+....HINT: Failed to solve dependencies. Here are some possible reasons:
+Component "espressif/tinyusb" (requires in ) has suitable versions for other targets:
+- 0.14.2: esp32s2, esp32s3
+- 0.14.3: esp32s2, esp32s3
+- 0.15.0~1: esp32s2, esp32s3
+- 0.15.0~2: esp32s2, esp32s3
+- 0.15.0~3: esp32s2, esp32s3
+- 0.15.0~4: esp32s2, esp32s3, esp32p4
+- 0.15.0~5: esp32s2, esp32s3, esp32p4
+- 0.15.0~6: esp32s2, esp32s3, esp32p4
+- 0.15.0~7: esp32s2, esp32s3, esp32p4
+- 0.15.0~8: esp32s2, esp32s3, esp32p4
+- 0.15.0~9: esp32s2, esp32s3, esp32p4
+- 0.15.0~10: esp32s2, esp32s3, esp32p4
+- 0.17.0~1: esp32s2, esp32s3, esp32p4
+- 0.17.0~2: esp32s2, esp32s3, esp32p4
+- 0.18.0~1: esp32s2, esp32s3, esp32p4
+- 0.18.0~2: esp32s2, esp32s3, esp32p4
+- 0.18.0~4: esp32s2, esp32s3, esp32p4
+- 0.18.0~5: esp32s2, esp32s3, esp32p4, esp32h4
+- 0.18.0~6: esp32s2, esp32s3, esp32p4, esp32h4
+- 0.19.0~1-rc0: esp32s2, esp32s3, esp32p4, esp32h4
+Is your current target esp32c6 set correctly?
+-- Configuring incomplete, errors occurred!
+FAILED: build.ninja 
+C:\Espressif\tools\cmake\3.30.2\bin\cmake.exe --regenerate-during-build -SC:\Espressif\frameworks\esp-idf-v5.5.1\csi\blink -BC:\Espressif\frameworks\esp-idf-v5.5.1\csi\blink\build

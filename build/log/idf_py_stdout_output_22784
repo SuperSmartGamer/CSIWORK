@@ -1,0 +1,323 @@
+Command: C:\Espressif\python_env\idf5.5_py3.12_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COm5 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c6 --revision 0 --decode-panic backtrace C:\Espressif\frameworks\esp-idf-v5.5.1\csi\blink\build\blink.elf C:\Espressif\frameworks\esp-idf-v5.5.1\csi\blink\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.12_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py'
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x15 (USB_UART_HPSYS),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40804b38
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875730,len:0x1748
+load:0x4086b910,len:0xddc
+load:0x4086e610,len:0x31dc
+entry 0x4086b91a
+[0;32mI (23) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Nov 23 2025 16:14:06[0m
+[0;32mI (23) boot: chip revision: v0.0[0m
+[0;32mI (23) boot: efuse block revision: v0.2[0m
+[0;32mI (24) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (24) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (24) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (25) boot: Enabling RNG early entropy source...[0m
+[0;32mI (25) boot: Partition Table:[0m
+[0;32mI (25) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (26) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (26) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (27) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (27) boot: End of partition table[0m
+[0;32mI (28) esp_image: segment 0: paddr=00010020 vaddr=42090020 size=1ae3ch (110140) map[0m
+[0;32mI (49) esp_image: segment 1: paddr=0002ae64 vaddr=40800000 size=051b4h ( 20916) load[0m
+[0;32mI (55) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=8f714h (587540) map[0m
+[0;32mI (167) esp_image: segment 3: paddr=000bf73c vaddr=408051b4 size=181d0h ( 98768) load[0m
+[0;32mI (195) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (195) boot: Disabling RNG early entropy source...[0m
+[0;32mI (196) cpu_start: Unicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (205) app_init: Application information:[0m
+[0;32mI (205) app_init: Project name:     blink[0m
+[0;32mI (205) app_init: App version:      v5.5.1[0m
+[0;32mI (205) app_init: Compile time:     Nov 23 2025 16:13:58[0m
+[0;32mI (206) app_init: ELF file SHA256:  79c8ce0d9...[0m
+[0;32mI (206) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (206) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (207) efuse_init: Chip rev:         v0.0[0m
+[0;32mI (207) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (207) heap_init: At 408227B0 len 00059E60 (359 KiB): RAM[0m
+[0;32mI (208) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (208) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (209) spi_flash: detected chip: gd[0m
+[0;32mI (209) spi_flash: flash io: dio[0m
+[0;33mW (209) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (210) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (210) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (211) coexist: coex firmware version: b0bcc39[0m
+[0;32mI (211) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (212) main_task: Started on CPU0[0m
+[0;32mI (212) main_task: Calling app_main()[0m
+[0;32mI (227) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (227) net80211: net80211 rom version: 5b8dcfa[0m
+[0;32mI (229) wifi:wifi driver task: 4082a5c0, prio:23, stack:6656, core=0[0m
+[0;32mI (237) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (238) wifi:wifi certification version: v7.0[0m
+[0;32mI (238) wifi:config NVS flash: enabled[0m
+[0;32mI (238) wifi:config nano formatting: disabled[0m
+[0;32mI (238) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band mode:0x1[0m
+[0;32mI (239) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (239) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (239) wifi:Init management short buffer num: 32[0m
+[0;32mI (239) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (239) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (240) wifi:Init static rx buffer size: 2212 (rxctrl:92, csi:512)[0m
+[0;32mI (240) wifi:Init static rx buffer num: 16[0m
+[0;32mI (240) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (241) wifi_init: rx ba win: 6[0m
+[0;32mI (241) wifi_init: accept mbox: 6[0m
+[0;32mI (241) wifi_init: tcpip mbox: 32[0m
+[0;32mI (241) wifi_init: udp mbox: 6[0m
+[0;32mI (241) wifi_init: tcp mbox: 6[0m
+[0;32mI (241) wifi_init: tcp tx win: 5760[0m
+[0;32mI (242) wifi_init: tcp rx win: 5760[0m
+[0;32mI (242) wifi_init: tcp mss: 1440[0m
+[0;32mI (242) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (242) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (242) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (242) phy_init: phy_version 341,a6c8fe6,Jul 30 2025,18:34:11[0m
+[0;32mI (290) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;33mW (302) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (302) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (302) wifi:(agc)0x600a7128:0xd2123800, min.avgNF:0xce->0xd2(dB), RCalCount:0x123, min.RRssi:0x800(-128.00)[0m
+[0;32mI (303) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;32mI (304) wifi:ic_enable_sniffer[0m
+[0;32mI (304) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (305) main_task: Returned from app_main()[0m
+[0;32mI (705) SCANNER: Scanning Ch 1... (Noise: 87 pps)[0m
+[0;32mI (1105) SCANNER: Scanning Ch 2... (Noise: 22 pps)[0m
+[0;32mI (1505) SCANNER: Scanning Ch 3... (Noise: 12 pps)[0m
+[0;32mI (1905) SCANNER: Scanning Ch 4... (Noise: 10 pps)[0m
+[0;32mI (2305) SCANNER: Scanning Ch 5... (Noise: 52 pps)[0m
+[0;32mI (2705) SCANNER: Scanning Ch 6... (Noise: 70 pps)[0m
+[0;32mI (3105) SCANNER: Scanning Ch 7... (Noise: 42 pps)[0m
+[0;32mI (3505) SCANNER: Scanning Ch 8... (Noise: 2 pps)[0m
+[0;32mI (3905) SCANNER: Scanning Ch 9... (Noise: 20 pps)[0m
+[0;32mI (4305) SCANNER: Scanning Ch 10... (Noise: 60 pps)[0m
+[0;32mI (4705) SCANNER: Scanning Ch 11... (Noise: 107 pps)[0m
+[0;32mI (5105) SCANNER: Scanning Ch 12... (Noise: 95 pps)[0m
+[0;32mI (5505) SCANNER: Scanning Ch 13... (Noise: 77 pps)[0m
+[0;32mI (5905) SCANNER: Scanning Ch 1... (Noise: 112 pps)[0m
+[0;32mI (6305) SCANNER: Scanning Ch 2... (Noise: 100 pps)[0m
+[0;32mI (6705) SCANNER: Scanning Ch 3... (Noise: 12 pps)[0m
+[0;32mI (7105) SCANNER: Scanning Ch 4... (Noise: 2 pps)[0m
+[0;32mI (7505) SCANNER: Scanning Ch 5... (Noise: 52 pps)[0m
+[0;32mI (7905) SCANNER: Scanning Ch 6... (Noise: 75 pps)[0m
+[0;32mI (8305) SCANNER: Scanning Ch 7... (Noise: 37 pps)[0m
+[0;32mI (8705) SCANNER: Scanning Ch 8... (Noise: 10 pps)[0m
+[0;32mI (9105) SCANNER: Scanning Ch 9... (Noise: 7 pps)[0m
+[0;32mI (9505) SCANNER: Scanning Ch 10... (Noise: 42 pps)[0m
+[0;32mI (9905) SCANNER: Scanning Ch 11... (Noise: 122 pps)[0m
+[0;32mI (10305) SCANNER: Scanning Ch 12... (Noise: 122 pps)[0m
+[0;32mI (10705) SCANNER: Scanning Ch 13... (Noise: 92 pps)[0m
+[0;32mI (11105) SCANNER: Scanning Ch 1... (Noise: 110 pps)[0m
+[0;32mI (11505) SCANNER: Scanning Ch 2... (Noise: 27 pps)[0m
+[0;32mI (11905) SCANNER: Scanning Ch 3... (Noise: 2 pps)[0m
+[0;32mI (12305) SCANNER: Scanning Ch 4... (Noise: 0 pps)[0m
+[0;32mI (12705) SCANNER: Scanning Ch 5... (Noise: 60 pps)[0m
+[0;32mI (13105) SCANNER: Scanning Ch 6... (Noise: 70 pps)[0m
+[0;32mI (13505) SCANNER: Scanning Ch 7... (Noise: 47 pps)[0m
+[0;32mI (13905) SCANNER: Scanning Ch 8... (Noise: 5 pps)[0m
+[0;32mI (14305) SCANNER: Scanning Ch 9... (Noise: 20 pps)[0m
+[0;32mI (14705) SCANNER: Scanning Ch 10... (Noise: 60 pps)[0m
+[0;32mI (15105) SCANNER: Scanning Ch 11... (Noise: 75 pps)[0m
+[0;32mI (15505) SCANNER: Scanning Ch 12... (Noise: 95 pps)[0m
+[0;32mI (15905) SCANNER: Scanning Ch 13... (Noise: 85 pps)[0m
+[0;32mI (16305) SCANNER: Scanning Ch 1... (Noise: 95 pps)[0m
+[0;32mI (16705) SCANNER: Scanning Ch 2... (Noise: 20 pps)[0m
+[0;32mI (17105) SCANNER: Scanning Ch 3... (Noise: 10 pps)[0m
+[0;32mI (17505) SCANNER: Scanning Ch 4... (Noise: 5 pps)[0m
+[0;32mI (17905) SCANNER: Scanning Ch 5... (Noise: 35 pps)[0m
+[0;32mI (18305) SCANNER: Scanning Ch 6... (Noise: 67 pps)[0m
+[0;32mI (18705) SCANNER: Scanning Ch 7... (Noise: 50 pps)[0m
+[0;32mI (19105) SCANNER: Scanning Ch 8... (Noise: 5 pps)[0m
+[0;32mI (19505) SCANNER: Scanning Ch 9... (Noise: 12 pps)[0m
+[0;32mI (19905) SCANNER: Scanning Ch 10... (Noise: 30 pps)[0m
+[0;32mI (20305) SCANNER: Scanning Ch 11... (Noise: 110 pps)[0m
+[0;32mI (20705) SCANNER: Scanning Ch 12... (Noise: 105 pps)[0m
+[0;32mI (21105) SCANNER: Scanning Ch 13... (Noise: 115 pps)[0m
+[0;32mI (21505) SCANNER: Scanning Ch 1... (Noise: 142 pps)[0m
+[0;32mI (21905) SCANNER: Scanning Ch 2... (Noise: 95 pps)[0m
+[0;32mI (22305) SCANNER: Scanning Ch 3... (Noise: 67 pps)[0m
+[0;32mI (22705) SCANNER: Scanning Ch 4... (Noise: 12 pps)[0m
+[0;32mI (23105) SCANNER: Scanning Ch 5... (Noise: 45 pps)[0m
+[0;32mI (23505) SCANNER: Scanning Ch 6... (Noise: 70 pps)[0m
+[0;32mI (23905) SCANNER: Scanning Ch 7... (Noise: 42 pps)[0m
+[0;32mI (24305) SCANNER: Scanning Ch 8... (Noise: 0 pps)[0m
+[0;32mI (24705) SCANNER: Scanning Ch 9... (Noise: 20 pps)[0m
+[0;32mI (25105) SCANNER: Scanning Ch 10... (Noise: 55 pps)[0m
+[0;32mI (25505) SCANNER: Scanning Ch 11... (Noise: 105 pps)[0m
+[0;32mI (25905) SCANNER: Scanning Ch 12... (Noise: 87 pps)[0m
+[0;32mI (26305) SCANNER: Scanning Ch 13... (Noise: 117 pps)[0m
+[0;32mI (26705) SCANNER: Scanning Ch 1... (Noise: 130 pps)[0m
+[0;32mI (27105) SCANNER: Scanning Ch 2... (Noise: 165 pps)[0m
+[0;32mI (27505) SCANNER: Scanning Ch 3... (Noise: 50 pps)[0m
+[0;32mI (27905) SCANNER: Scanning Ch 4... (Noise: 2 pps)[0m
+[0;32mI (28305) SCANNER: Scanning Ch 5... (Noise: 52 pps)[0m
+[0;32mI (28705) SCANNER: Scanning Ch 6... (Noise: 67 pps)[0m
+[0;32mI (29105) SCANNER: Scanning Ch 7... (Noise: 42 pps)[0m
+[0;32mI (29505) SCANNER: Scanning Ch 8... (Noise: 0 pps)[0m
+[0;32mI (29905) SCANNER: Scanning Ch 9... (Noise: 10 pps)[0m
+[0;32mI (30305) SCANNER: Scanning Ch 10... (Noise: 45 pps)[0m
+[0;32mI (30705) SCANNER: Scanning Ch 11... (Noise: 112 pps)[0m
+[0;32mI (31105) SCANNER: Scanning Ch 12... (Noise: 110 pps)[0m
+[0;32mI (31505) SCANNER: Scanning Ch 13... (Noise: 120 pps)[0m
+[0;32mI (31905) SCANNER: Scanning Ch 1... (Noise: 192 pps)[0m
+[0;32mI (32305) SCANNER: Scanning Ch 2... (Noise: 47 pps)[0m
+[0;32mI (32705) SCANNER: Scanning Ch 3... (Noise: 10 pps)[0m
+[0;32mI (33105) SCANNER: Scanning Ch 4... (Noise: 2 pps)[0m
+[0;32mI (33505) SCANNER: Scanning Ch 5... (Noise: 57 pps)[0m
+[0;32mI (33905) SCANNER: Scanning Ch 6... (Noise: 75 pps)[0m
+[0;32mI (34305) SCANNER: Scanning Ch 7... (Noise: 52 pps)[0m
+[0;32mI (34705) SCANNER: Scanning Ch 8... (Noise: 2 pps)[0m
+[0;32mI (35105) SCANNER: Scanning Ch 9... (Noise: 12 pps)[0m
+[0;32mI (35505) SCANNER: Scanning Ch 10... (Noise: 55 pps)[0m
+[0;32mI (35905) SCANNER: Scanning Ch 11... (Noise: 72 pps)[0m
+[0;32mI (36305) SCANNER: Scanning Ch 12... (Noise: 95 pps)[0m
+[0;32mI (36705) SCANNER: Scanning Ch 13... (Noise: 120 pps)[0m
+[0;32mI (37105) SCANNER: Scanning Ch 1... (Noise: 72 pps)[0m
+[0;32mI (37505) SCANNER: Scanning Ch 2... (Noise: 90 pps)[0m
+[0;32mI (37905) SCANNER: Scanning Ch 3... (Noise: 22 pps)[0m
+[0;32mI (38305) SCANNER: Scanning Ch 4... (Noise: 10 pps)[0m
+[0;32mI (38705) SCANNER: Scanning Ch 5... (Noise: 52 pps)[0m
+[0;32mI (39105) SCANNER: Scanning Ch 6... (Noise: 77 pps)[0m
+[0;32mI (39505) SCANNER: Scanning Ch 7... (Noise: 50 pps)[0m
+[0;32mI (39905) SCANNER: Scanning Ch 8... (Noise: 0 pps)[0m
+[0;32mI (40305) SCANNER: Scanning Ch 9... (Noise: 7 pps)[0m
+[0;32mI (40705) SCANNER: Scanning Ch 10... (Noise: 82 pps)[0m
+[0;32mI (41105) SCANNER: Scanning Ch 11... (Noise: 145 pps)[0m
+[0;32mI (41505) SCANNER: Scanning Ch 12... (Noise: 107 pps)[0m
+[0;32mI (41905) SCANNER: Scanning Ch 13... (Noise: 112 pps)[0m
+[0;32mI (42305) SCANNER: Scanning Ch 1... (Noise: 85 pps)[0m
+[0;32mI (42705) SCANNER: Scanning Ch 2... (Noise: 30 pps)[0m
+[0;32mI (43105) SCANNER: Scanning Ch 3... (Noise: 10 pps)[0m
+[0;32mI (43505) SCANNER: Scanning Ch 4... (Noise: 20 pps)[0m
+[0;32mI (43905) SCANNER: Scanning Ch 5... (Noise: 57 pps)[0m
+[0;32mI (44305) SCANNER: Scanning Ch 6... (Noise: 72 pps)[0m
+[0;32mI (44705) SCANNER: Scanning Ch 7... (Noise: 37 pps)[0m
+[0;32mI (45105) SCANNER: Scanning Ch 8... (Noise: 5 pps)[0m
+[0;32mI (45505) SCANNER: Scanning Ch 9... (Noise: 10 pps)[0m
+[0;32mI (45905) SCANNER: Scanning Ch 10... (Noise: 67 pps)[0m
+[0;32mI (46305) SCANNER: Scanning Ch 11... (Noise: 142 pps)[0m
+[0;32mI (46705) SCANNER: Scanning Ch 12... (Noise: 97 pps)[0m
+[0;32mI (47105) SCANNER: Scanning Ch 13... (Noise: 132 pps)[0m
+[0;32mI (47505) SCANNER: Scanning Ch 1... (Noise: 55 pps)[0m
+[0;32mI (47905) SCANNER: Scanning Ch 2... (Noise: 40 pps)[0m
+[0;32mI (48305) SCANNER: Scanning Ch 3... (Noise: 5 pps)[0m
+[0;32mI (48705) SCANNER: Scanning Ch 4... (Noise: 5 pps)[0m
+[0;32mI (49105) SCANNER: Scanning Ch 5... (Noise: 67 pps)[0m
+[0;32mI (49505) SCANNER: Scanning Ch 6... (Noise: 87 pps)[0m
+[0;32mI (49905) SCANNER: Scanning Ch 7... (Noise: 35 pps)[0m
+[0;32mI (50305) SCANNER: Scanning Ch 8... (Noise: 5 pps)[0m
+[0;32mI (50705) SCANNER: Scanning Ch 9... (Noise: 37 pps)[0m
+[0;32mI (51105) SCANNER: Scanning Ch 10... (Noise: 77 pps)[0m
+[0;32mI (51505) SCANNER: Scanning Ch 11... (Noise: 145 pps)[0m
+[0;32mI (51905) SCANNER: Scanning Ch 12... (Noise: 142 pps)[0m
+[0;32mI (52305) SCANNER: Scanning Ch 13... (Noise: 140 pps)[0m
+[0;32mI (52705) SCANNER: Scanning Ch 1... (Noise: 80 pps)[0m
+[0;32mI (53105) SCANNER: Scanning Ch 2... (Noise: 75 pps)[0m
+[0;32mI (53505) SCANNER: Scanning Ch 3... (Noise: 55 pps)[0m
+[0;32mI (53905) SCANNER: Scanning Ch 4... (Noise: 17 pps)[0m
+[0;32mI (54305) SCANNER: Scanning Ch 5... (Noise: 180 pps)[0m
+[0;32mI (54705) SCANNER: Scanning Ch 6... (Noise: 72 pps)[0m
+[0;32mI (55105) SCANNER: Scanning Ch 7... (Noise: 50 pps)[0m
+[0;32mI (55505) SCANNER: Scanning Ch 8... (Noise: 5 pps)[0m
+[0;32mI (55905) SCANNER: Scanning Ch 9... (Noise: 20 pps)[0m
+[0;32mI (56305) SCANNER: Scanning Ch 10... (Noise: 127 pps)[0m
+[0;32mI (56705) SCANNER: Scanning Ch 11... (Noise: 117 pps)[0m
+[0;32mI (57105) SCANNER: Scanning Ch 12... (Noise: 95 pps)[0m
+[0;32mI (57505) SCANNER: Scanning Ch 13... (Noise: 117 pps)[0m
+[0;32mI (57905) SCANNER: Scanning Ch 1... (Noise: 82 pps)[0m
+[0;32mI (58305) SCANNER: Scanning Ch 2... (Noise: 55 pps)[0m
+[0;32mI (58705) SCANNER: Scanning Ch 3... (Noise: 7 pps)[0m
+[0;32mI (59105) SCANNER: Scanning Ch 4... (Noise: 12 pps)[0m
+[0;32mI (59505) SCANNER: Scanning Ch 5... (Noise: 67 pps)[0m
+[0;32mI (59905) SCANNER: Scanning Ch 6... (Noise: 72 pps)[0m
+[0;32mI (60305) SCANNER: Scanning Ch 7... (Noise: 40 pps)[0m
+[0;32mI (60705) SCANNER: Scanning Ch 8... (Noise: 0 pps)[0m
+[0;32mI (61105) SCANNER: Scanning Ch 9... (Noise: 25 pps)[0m
+[0;32mI (61505) SCANNER: Scanning Ch 10... (Noise: 60 pps)[0m
+[0;32mI (61905) SCANNER: Scanning Ch 11... (Noise: 75 pps)[0m
+[0;32mI (62305) SCANNER: Scanning Ch 12... (Noise: 72 pps)[0m
+[0;32mI (62705) SCANNER: Scanning Ch 13... (Noise: 75 pps)[0m
+[0;32mI (63105) SCANNER: Scanning Ch 1... (Noise: 177 pps)[0m
+[0;32mI (63505) SCANNER: Scanning Ch 2... (Noise: 70 pps)[0m
+[0;32mI (63905) SCANNER: Scanning Ch 3... (Noise: 57 pps)[0m
+[0;32mI (64305) SCANNER: Scanning Ch 4... (Noise: 15 pps)[0m
+[0;32mI (64705) SCANNER: Scanning Ch 5... (Noise: 45 pps)[0m
+[0;32mI (65105) SCANNER: Scanning Ch 6... (Noise: 70 pps)[0m
+[0;32mI (65505) SCANNER: Scanning Ch 7... (Noise: 35 pps)[0m
+[0;32mI (65905) SCANNER: Scanning Ch 8... (Noise: 2 pps)[0m
+[0;32mI (66305) SCANNER: Scanning Ch 9... (Noise: 50 pps)[0m
+[0;32mI (66705) SCANNER: Scanning Ch 10... (Noise: 72 pps)[0m
+[0;32mI (67105) SCANNER: Scanning Ch 11... (Noise: 80 pps)[0m
+[0;32mI (67505) SCANNER: Scanning Ch 12... (Noise: 62 pps)[0m
+[0;32mI (67905) SCANNER: Scanning Ch 13... (Noise: 57 pps)[0m
+[0;32mI (68305) SCANNER: Scanning Ch 1... (Noise: 125 pps)[0m
+[0;32mI (68705) SCANNER: Scanning Ch 2... (Noise: 65 pps)[0m
+[0;32mI (69105) SCANNER: Scanning Ch 3... (Noise: 360 pps)[0m
+[0;32mI (69505) SCANNER: Scanning Ch 4... (Noise: 10 pps)[0m
+[0;32mI (69905) SCANNER: Scanning Ch 5... (Noise: 40 pps)[0m
+[0;32mI (70305) SCANNER: Scanning Ch 6... (Noise: 67 pps)[0m
+[0;32mI (70705) SCANNER: Scanning Ch 7... (Noise: 105 pps)[0m
+[0;32mI (71105) SCANNER: Scanning Ch 8... (Noise: 5 pps)[0m
+[0;32mI (71505) SCANNER: Scanning Ch 9... (Noise: 17 pps)[0m
+[0;32mI (71905) SCANNER: Scanning Ch 10... (Noise: 70 pps)[0m
+[0;32mI (72305) SCANNER: Scanning Ch 11... (Noise: 65 pps)[0m
+[0;32mI (72705) SCANNER: Scanning Ch 12... (Noise: 35 pps)[0m
+[0;32mI (73105) SCANNER: Scanning Ch 13... (Noise: 37 pps)[0m
+[0;32mI (73505) SCANNER: Scanning Ch 1... (Noise: 102 pps)[0m
+[0;32mI (73905) SCANNER: Scanning Ch 2... (Noise: 20 pps)[0m
+[0;32mI (74305) SCANNER: Scanning Ch 3... (Noise: 0 pps)[0m
+[0;32mI (74705) SCANNER: Scanning Ch 4... (Noise: 0 pps)[0m
+[0;32mI (75105) SCANNER: Scanning Ch 5... (Noise: 47 pps)[0m
+[0;32mI (75505) SCANNER: Scanning Ch 6... (Noise: 72 pps)[0m
+[0;32mI (75905) SCANNER: Scanning Ch 7... (Noise: 32 pps)[0m
+[0;32mI (76305) SCANNER: Scanning Ch 8... (Noise: 0 pps)[0m
+[0;32mI (76705) SCANNER: Scanning Ch 9... (Noise: 17 pps)[0m
+[0;32mI (77105) SCANNER: Scanning Ch 10... (Noise: 50 pps)[0m
+[0;32mI (77505) SCANNER: Scanning Ch 11... (Noise: 70 pps)[0m
+[0;32mI (77905) SCANNER: Scanning Ch 12... (Noise: 42 pps)[0m
+[0;32mI (78305) SCANNER: Scanning Ch 13... (Noise: 65 pps)[0m
+[0;32mI (78705) SCANNER: Scanning Ch 1... (Noise: 292 pps)[0m
+[0;32mI (79105) SCANNER: Scanning Ch 2... (Noise: 190 pps)[0m
+[0;32mI (79505) SCANNER: Scanning Ch 3... (Noise: 37 pps)[0m
+[0;32mI (79905) SCANNER: Scanning Ch 4... (Noise: 17 pps)[0m
+[0;32mI (80305) SCANNER: Scanning Ch 5... (Noise: 35 pps)[0m
+[0;32mI (80705) SCANNER: Scanning Ch 6... (Noise: 67 pps)[0m
+[0;32mI (81105) SCANNER: Scanning Ch 7... (Noise: 42 pps)[0m
+[0;32mI (81505) SCANNER: Scanning Ch 8... (Noise: 0 pps)[0m
+[0;32mI (81905) SCANNER: Scanning Ch 9... (Noise: 7 pps)[0m
+[0;32mI (82305) SCANNER: Scanning Ch 10... (Noise: 45 pps)[0m
+[0;32mI (82705) SCANNER: Scanning Ch 11... (Noise: 92 pps)[0m
+[0;32mI (83105) SCANNER: Scanning Ch 12... (Noise: 47 pps)[0m
+[0;32mI (83505) SCANNER: Scanning Ch 13... (Noise: 75 pps)[0m
+[0;32mI (83905) SCANNER: Scanning Ch 1... (Noise: 145 pps)[0m
+[0;32mI (84305) SCANNER: Scanning Ch 2... (Noise: 47 pps)[0m
+[0;32mI (84705) SCANNER: Scanning Ch 3... (Noise: 50 pps)[0m
+[0;32mI (85105) SCANNER: Scanning Ch 4... (Noise: 0 pps)[0m
+[0;32mI (85505) SCANNER: Scanning Ch 5... (Noise: 37 pps)[0m
+[0;32mI (85905) SCANNER: Scanning Ch 6... (Noise: 72 pps)[0m
+[0;32mI (86305) SCANNER: Scanning Ch 7... (Noise: 55 pps)[0m
+[0;32mI (86705) SCANNER: Scanning Ch 8... (Noise: 12 pps)[0m
+[0;32mI (87105) SCANNER: Scanning Ch 9... (Noise: 17 pps)[0m
+[0;32mI (87505) SCANNER: Scanning Ch 10... (Noise: 82 pps)[0m
+[0;32mI (87905) SCANNER: Scanning Ch 11... (Noise: 82 pps)[0m
+[0;32mI (88305) SCANNER: Scanning Ch 12... (Noise: 42 pps)[0m
+[0;32mI (88705) SCANNER: Scanning Ch 13... (Noise: 50 pps)[0m
+[0;32mI (89105) SCANNER: Scanning Ch 1... (Noise: 70 pps)[0m
+[0;32mI (89505) SCANNER: Scanning Ch 2... (Noise: 77 pps)[0m
+[0;32mI (89905) SCANNER: Scanning Ch 3... (Noise: 147 pps)[0m
+[0;32mI (90305) SCANNER: Scanning Ch 4... (Noise: 77 pps)[0m
+[0;32mI (90705) SCANNER: Scanning Ch 5... (Noise: 35 pps)[0m
+[0;32mI (91105) SCANNER: Scanning Ch 6... (Noise: 25 pps)[0m
+[0;32mI (91505) SCANNER: Scanning Ch 7... (Noise: 0 pps)[0m
+[0;32mI (91905) SCANNER: Scanning Ch 8... (Noise: 2 pps)[0m

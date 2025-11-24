@@ -1,0 +1,60 @@
+Command: ninja remove-dependency
+CMake Error at C:/Espressif/frameworks/esp-idf-v5.5.1/tools/cmake/build.cmake:629 (message):
+  ERROR: Because no versions of espressif/esp_tinyusb match >=0.0.0,<1.4.2~2
+  || >1.4.2~2,<1.4.3 || >1.4.3,<1.4.4 || >1.4.4,<1.4.5 || >1.4.5,<1.5.0 ||
+  >1.5.0,<1.6.0 || >1.6.0,<1.7.1 || >1.7.1,<1.7.2 || >1.7.2,<1.7.4 ||
+  >1.7.4,<1.7.4~1 || >1.7.4~1,<1.7.5 || >1.7.5,<1.7.6 || >1.7.6,<1.7.6~1 ||
+  >1.7.6~1,<1.7.6~2 || >1.7.6~2
+
+   and espressif/esp_tinyusb (1.4.2~2) depends on espressif/tinyusb (>=0.14.2), espressif/esp_tinyusb (>=0.0.0,<1.4.3 || >1.4.3,<1.4.4 || >1.4.4,<1.4.5 || >1.4.5,<1.5.0 || >1.5.0,<1.6.0 || >1.6.0,<1.7.1 || >1.7.1,<1.7.2 || >1.7.2,<1.7.4 || >1.7.4,<1.7.4~1 || >1.7.4~1,<1.7.5 || >1.7.5,<1.7.6 || >1.7.6,<1.7.6~1 || >1.7.6~1,<1.7.6~2 || >1.7.6~2) requires espressif/tinyusb (>=0.14.2).
+
+  And because espressif/esp_tinyusb (1.4.3) depends on espressif/tinyusb
+  (>=0.14.2), espressif/esp_tinyusb (>=0.0.0,<1.4.4 || >1.4.4,<1.4.5 ||
+  >1.4.5,<1.5.0 || >1.5.0,<1.6.0 || >1.6.0,<1.7.1 || >1.7.1,<1.7.2 ||
+  >1.7.2,<1.7.4 || >1.7.4,<1.7.4~1 || >1.7.4~1,<1.7.5 || >1.7.5,<1.7.6 ||
+  >1.7.6,<1.7.6~1 || >1.7.6~1,<1.7.6~2 || >1.7.6~2) requires
+  espressif/tinyusb (>=0.14.2).
+
+  And because espressif/esp_tinyusb (1.4.4) depends on both espressif/tinyusb
+  (>=0.14.2) and espressif/tinyusb (>=0.14.2), espressif/esp_tinyusb
+  (>=0.0.0,<1.5.0 || >1.5.0,<1.6.0 || >1.6.0,<1.7.1 || >1.7.1,<1.7.2 ||
+  >1.7.2,<1.7.4 || >1.7.4,<1.7.4~1 || >1.7.4~1,<1.7.5 || >1.7.5,<1.7.6 ||
+  >1.7.6,<1.7.6~1 || >1.7.6~1,<1.7.6~2 || >1.7.6~2) requires
+  espressif/tinyusb (>=0.14.2).
+
+  And because espressif/esp_tinyusb (1.5.0) depends on both espressif/tinyusb
+  (>=0.14.2) and espressif/tinyusb (>=0.14.2), espressif/esp_tinyusb
+  (>=0.0.0,<1.7.1 || >1.7.1,<1.7.2 || >1.7.2,<1.7.4 || >1.7.4,<1.7.4~1 ||
+  >1.7.4~1,<1.7.5 || >1.7.5,<1.7.6 || >1.7.6,<1.7.6~1 || >1.7.6~1,<1.7.6~2 ||
+  >1.7.6~2) requires espressif/tinyusb (>=0.14.2).
+
+  And because espressif/esp_tinyusb (1.7.1) depends on both espressif/tinyusb
+  (>=0.14.2) and espressif/tinyusb (>=0.14.2), espressif/esp_tinyusb
+  (>=0.0.0,<1.7.4 || >1.7.4,<1.7.4~1 || >1.7.4~1,<1.7.5 || >1.7.5,<1.7.6 ||
+  >1.7.6,<1.7.6~1 || >1.7.6~1,<1.7.6~2 || >1.7.6~2) requires
+  espressif/tinyusb (>=0.14.2).
+
+  And because espressif/esp_tinyusb (1.7.4) depends on both espressif/tinyusb
+  (>=0.14.2) and espressif/tinyusb (>=0.14.2), espressif/esp_tinyusb
+  (>=0.0.0,<1.7.5 || >1.7.5,<1.7.6 || >1.7.6,<1.7.6~1 || >1.7.6~1,<1.7.6~2 ||
+  >1.7.6~2) requires espressif/tinyusb (>=0.14.2).
+
+  And because espressif/esp_tinyusb (1.7.5) depends on both espressif/tinyusb
+  (>=0.14.2) and espressif/tinyusb (>=0.14.2), espressif/esp_tinyusb
+  (>=0.0.0,<1.7.6~1 || >1.7.6~1,<1.7.6~2 || >1.7.6~2) requires
+  espressif/tinyusb (>=0.14.2).
+
+  And because espressif/esp_tinyusb (1.7.6~1) depends on both
+  espressif/tinyusb (>=0.14.2) and espressif/tinyusb (>=0.14.2),
+  espressif/esp_tinyusb (>=0.0.0) requires espressif/tinyusb (>=0.14.2).
+
+  So, because no versions of espressif/tinyusb match >=0.14.2
+
+   and project depends on espressif/esp_tinyusb (*), version solving failed.
+
+Call Stack (most recent call first):
+  C:/Espressif/frameworks/esp-idf-v5.5.1/tools/cmake/project.cmake:740 (idf_build_process)
+  CMakeLists.txt:6 (project)
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed
